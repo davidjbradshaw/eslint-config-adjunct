@@ -1,0 +1,19 @@
+{
+  "extends": ["eslint:recommended", "./index.js"],
+  "rules": {
+    "comma-dangle": 0,
+    "prefer-destructuring": 0
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "generators": false,
+      "objectLiteralDuplicateProperties": false
+    }
+  },
+}
