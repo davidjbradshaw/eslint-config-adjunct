@@ -16,6 +16,22 @@ npm install -g install-peerdeps
 install-peerdeps --dev eslint-config-misc
 ```
 
+## Configure
+
+Add the following to your `.eslintrc`
+```
+{
+  "extends": ["misc"]
+}
+```
+
+Or to turn all the warnings into errors
+```
+{
+  "extends": ["misc/strict"]
+}
+```
+
 ## Rules
 
 This configuration contains the following esLint plugins
