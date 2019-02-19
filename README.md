@@ -1,4 +1,4 @@
-# eslint-config-misc
+# eslint-config-adjunct
 _An opinionated collection of the best lesser known esLint plugins that every project should include_
 
 ## Install
@@ -6,14 +6,14 @@ _An opinionated collection of the best lesser known esLint plugins that every pr
 To run this config you will need to install it along with it's `peerDependancies`.
 
 ```
-npx install-peerdeps --dev eslint-config-misc
+npx install-peerdeps --dev eslint-config-adjunct
 ```
 
 If you have problems with the above command, then you will need to run `install-peerdeps` locally.
 
 ```
 npm install -g install-peerdeps
-install-peerdeps --dev eslint-config-misc
+install-peerdeps --dev eslint-config-adjunct
 ```
 
 ## Configure
@@ -21,14 +21,7 @@ install-peerdeps --dev eslint-config-misc
 Add the following to your `.eslintrc`
 ```
 {
-  "extends": ["misc"]
-}
-```
-
-Or to turn all the warnings into errors
-```
-{
-  "extends": ["misc/strict"]
+  "extends": ["adjunct"]
 }
 ```
 
