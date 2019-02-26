@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-_A mildly opinionated collection of the best lesser known esLint plugins that every project can benefit from.
+_A mildly opinionated collection of the best lesser known esLint plugins that every project can benefit from._
 
 This config is designed to be used alongside any of the major esLint configs, such as `airbnb`, `standard` or `xo`. It provides a range of extra rules to enhance the linting of your code.
 
