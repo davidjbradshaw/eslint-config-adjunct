@@ -21,7 +21,7 @@ install-peerdeps --dev eslint-config-adjunct
 
 ## Configure
 
-Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `extends` array. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrx` should look like this:
+Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `extends` array. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrc` should look like this:
 
 ```json
 {
