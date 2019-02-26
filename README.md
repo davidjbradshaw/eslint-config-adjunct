@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-_A mildly opinionated collection of the best lesser known esLint plugins that every project should include_.
+_A mildly opinionated collection of the best lesser known esLint plugins that every project can benefit from.
 
 This config is designed to be used alongside any of the major esLint configs, such as `airbnb`, `standard` or `xo`. It provides a range of extra rules to enhance the linting of your code.
 
@@ -33,7 +33,7 @@ You can now include `html` and `markdown` in the list of files passed to esLint 
 
 ## Plugins
 
-This configuration contains the following esLint plugins
+This configuration contains the following esLint plugins.
 
 * eslint-plugin-eslint-comments
 * eslint-plugin-html
@@ -48,7 +48,7 @@ This configuration contains the following esLint plugins
 
 ## Rules
 
-In the most part the default rules are used for the plugins listed above, with the following exceptions
+In the most part the default rules are used for the plugins listed above, with the following exceptions.
 
 ### Markdown
 
@@ -56,7 +56,7 @@ When linting code snippets in Markdown files, a few rules to relating to globals
 
 ### Switch-Case
 
-Enforces a blank line between case blocks
+Enforces a blank line between case blocks.
 
 ```js
 // Good
