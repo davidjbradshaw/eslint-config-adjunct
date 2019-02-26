@@ -2,6 +2,8 @@
 
 _A mildly opinionated collection of the best lesser known esLint plugins that every project should include_.
 
+This config is designed to be used alongside any of the major esLint configs, such as `airbnb`, `standard` or `xo`. It provides a range of extra rules to enhance the linting of your code.
+
 ## Install
 
 To run this config you will need to install it along with it's `peerDependancies`.
@@ -19,11 +21,11 @@ install-peerdeps --dev eslint-config-adjunct
 
 ## Configure
 
-Add the following to your `.eslintrc`
+Extend your `.eslintrc`, with `adjunct`. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrx` should look like this:
 
 ```json
 {
-  "extends": ["adjunct"]
+  "extends": ["airbnb", "adjunct"]
 }
 ```
 
