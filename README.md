@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-_A mildly opinionated collection of the best lesser known esLint plugins that every project should include_
+_A mildly opinionated collection of the best lesser known esLint plugins that every project should include_.
 
 ## Install
 
@@ -42,3 +42,7 @@ This configuration contains the following esLint plugins
 * eslint-plugin-sonarjs
 * eslint-plugin-switch-case
 * eslint-plugin-unicon
+
+## License
+Copyright &copy; 2019 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Licensed under the [MIT License](LICENSE).
