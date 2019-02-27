@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    './rules/array-func',
     './rules/eslint-comments',
     './rules/html',
     // './rules/json', // flaky

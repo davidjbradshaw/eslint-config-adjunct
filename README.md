@@ -37,16 +37,17 @@ You can now include `html` and `markdown` in the list of files passed to esLint 
 
 This configuration contains the following esLint plugins.
 
-* eslint-plugin-eslint-comments
-* eslint-plugin-html
-* eslint-plugin-markdown
-* eslint-plugin-no-constructor-bind
-* eslint-plugin-no-use-extend-native
-* eslint-plugin-promise
-* eslint-plugin-simple-import-sort
-* eslint-plugin-sonarjs
-* eslint-plugin-switch-case
-* eslint-plugin-unicon
+* [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
+* [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+* [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
+* [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
+* [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
+* [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
+* [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
+* [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
+* [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+* [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
+* [eslint-plugin-unicon](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
 ## Rules
 
