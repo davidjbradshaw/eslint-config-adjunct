@@ -2,7 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/davidjbradshaw/eslint-config-adjunct.svg)](https://greenkeeper.io/)
 
-> _A mildly opinionated collection of the best lesser known esLint plugins to use along side you main eslint configuration._
+> _A mildly opinionated collection of the best lesser known esLint plugins to use alongside you main eslint configuration._
 
 This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript) or [standard](https://github.com/standard/eslint-config-standard). It provides a range of extra rules to enhance the linting of your code.
 
