@@ -55,11 +55,11 @@ In the most part the default rules are used for the plugins listed above, with t
 
 ### Markdown
 
-When linting code snippets in Markdown files, a few rules to relating to globals and unused vars are disabled.
+When linting code snippets in Markdown files, a few rules relating to globals and unused vars are disabled.
 
 ### Switch-Case
 
-Enforces a blank line between case blocks.
+Adds thes `fallthrough: 'never'` option to the the `newlint-between-switch-case` rule.
 
 ```js
 // Good
