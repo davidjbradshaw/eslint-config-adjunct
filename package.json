@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-adjunct",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A midly opinionated collection of the best lesser known esLint plugins that every project should include",
   "main": "index.js",
   "scripts": {
