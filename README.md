@@ -78,6 +78,10 @@ switch (foo) {
 }
 ```
 
+### No-Constructor-Bind
+
+Currently disabled pending fix of this [issue](https://github.com/markalfred/eslint-plugin-no-constructor-bind/issues).
+
 ## License
 Copyright &copy; 2019 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).
