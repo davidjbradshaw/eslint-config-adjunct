@@ -65,16 +65,17 @@ Adds thes `fallthrough: 'never'` option to the the `newlint-between-switch-case`
 // Good
 
 switch (foo) {
-  case: 1
+  case 1:
     something()
     break
 
-  case: 2
-  case: 3
+  case 2:
+  case 3:
     somethingElse()
+    break
 
   default:
-    anotherThing()
+    defaultThing()
 }
 ```
 

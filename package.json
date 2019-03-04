@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "ci-test": "eslint . && npm run prepublish",
-    "test": "eslint .",
-    "eslint": "eslint --color .",
-    "eslint:fix": "eslint --colors --fix .",
+    "test": "eslint *.{js,md} rules/*.js",
+    "eslint": "eslint --color  *.{js,md} rules/*.js",
+    "eslint:fix": "eslint --colors --fix  *.{js,md} rules/*.js",
     "prepublish": "eslint-find-rules --unused --no-core"
   },
   "author": "David J. Bradshaw",

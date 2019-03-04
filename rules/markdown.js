@@ -16,7 +16,8 @@ module.exports = {
         'no-console': 'off',
         'no-unused-vars': 'off',
         'prefer-reflect': 'off',
-        strict: 'off'
+        strict: 'off',
+        'unicorn/filename-case': 'off'
       }
     }
   ]
