@@ -7,7 +7,7 @@
     "ci-test": "eslint . && npm run prepublish",
     "test": "eslint *.{js,md} rules/*.js",
     "eslint": "eslint --color  *.{js,md} rules/*.js",
-    "eslint:fix": "eslint --colors --fix  *.{js,md} rules/*.js",
+    "eslint:fix": "eslint --color --fix  *.{js,md} rules/*.js",
     "prepublish": "eslint-find-rules --unused --no-core"
   },
   "author": "David J. Bradshaw",
