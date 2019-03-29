@@ -8,7 +8,7 @@
     "test": "eslint *.{js,md} rules/*.js",
     "eslint": "eslint --color  *.{js,md} rules/*.js",
     "eslint:fix": "eslint --color --fix  *.{js,md} rules/*.js",
-    "prepublish": "eslint-find-rules --unused --no-core"
+    "prepare": "eslint-find-rules --unused --no-core"
   },
   "author": "David J. Bradshaw",
   "license": "MIT",
@@ -28,7 +28,9 @@
     "es2017",
     "es2018"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "npm-check-updates": "^3.1.3"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.0",
