@@ -47,7 +47,7 @@ This configuration contains the following esLint plugins.
 * [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
 * [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 * [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
-* [eslint-plugin-unicon](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
 ## Rules
 
