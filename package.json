@@ -4,8 +4,8 @@
   "description": "A midly opinionated collection of the best lesser known esLint plugins that every project should include",
   "main": "index.js",
   "scripts": {
-    "ci-test": "npm run eslint && npm run prepublishOnly",
-    "test": "eslint *.{js,md} rules/*.js",
+    "ci-test": "npm run test",
+    "test": "npm run eslint && npm run prepublishOnly",
     "eslint": "eslint --color  *.{js,md} rules/*.js",
     "eslint:fix": "eslint --color --fix  *.{js,md} rules/*.js",
     "prepublishOnly": "eslint-find-rules --unused --no-core"
