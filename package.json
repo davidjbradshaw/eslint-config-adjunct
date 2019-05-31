@@ -45,7 +45,7 @@
     "eslint-plugin-only-error": "^1.0.2",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-simple-import-sort": "^3.0.0",
-    "eslint-plugin-sonarjs": "^0.3.0",
+    "eslint-plugin-sonarjs": "^0.4.0",
     "eslint-plugin-switch-case": "^1.1.2",
     "eslint-plugin-unicorn": "^8.0.0",
     "husky": "^2.0.0",
