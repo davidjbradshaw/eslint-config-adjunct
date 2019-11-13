@@ -44,7 +44,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 
 ## Plugins
 
-This configuration contains the following esLint plugins.
+The following esLint plugins are contained in this configuration.
 
 - [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
 - [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
