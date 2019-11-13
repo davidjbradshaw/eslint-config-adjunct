@@ -1,6 +1,8 @@
 {
   "extends": ["eslint:recommended", "./index.js"],
-  "rules": {},
+  "rules": {
+    "unicorn/filename-case": "off"
+  },
   "env": {
     "es6": true,
     "node": true

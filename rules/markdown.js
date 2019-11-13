@@ -5,8 +5,8 @@ module.exports = {
       files: ['**/*.md'],
       parserOptions: {
         ecmacFeatures: {
-          impliedStrict: true
-        }
+          impliedStrict: true,
+        },
       },
       rules: {
         'global-require': 'off',
@@ -17,8 +17,8 @@ module.exports = {
         'no-unused-vars': 'off',
         'prefer-reflect': 'off',
         strict: 'off',
-        'unicorn/filename-case': 'off'
-      }
-    }
-  ]
+        'unicorn/filename-case': 'off',
+      },
+    },
+  ],
 }
