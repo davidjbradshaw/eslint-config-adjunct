@@ -33,6 +33,15 @@ Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `e
 
 You can now include `html` and `markdown` in the list of files passed to esLint to have any contained JavaScript linted.
 
+```json
+{
+  "scripts": {
+    "eslint": "eslint --color  *.{html,js,json,md} src/*.{html,js,json,md}",
+    "eslint:fix": "npm run eslint -- --fix"
+  }
+}
+```
+
 ## Plugins
 
 This configuration contains the following esLint plugins.
