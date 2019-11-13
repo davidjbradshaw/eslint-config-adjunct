@@ -3,7 +3,7 @@ module.exports = {
     './rules/array-func',
     './rules/eslint-comments',
     './rules/html',
-    // './rules/json', // flaky
+    './rules/json-format',
     './rules/markdown',
     './rules/no-constructor-bind',
     './rules/no-secrets',
