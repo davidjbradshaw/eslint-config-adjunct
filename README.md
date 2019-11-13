@@ -36,7 +36,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 ```json
 {
   "scripts": {
-    "eslint": "eslint --color  *.{html,js,json,md} src/*.{html,js,json,md}",
+    "eslint": "eslint --color *.{html,js,json,jsx,md} src/*.{html,js,json,jsx,md}",
     "eslint:fix": "npm run eslint -- --fix"
   }
 }
