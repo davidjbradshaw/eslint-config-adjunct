@@ -31,7 +31,7 @@ Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `e
 }
 ```
 
-You can now include `html` and `markdown` in the list of files passed to esLint to have any contained JavaScript linted.
+You can now include `html`, `json` and `markdown` in the list of files passed to esLint to have any contained JavaScript linted.
 
 ```json
 {
