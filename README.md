@@ -4,7 +4,7 @@
 
 > _A mildly opinionated collection of the best *esLint plugins* to use alongside your main eslint configuration._
 
-This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript) or [standard](https://github.com/standard/eslint-config-standard). It provides a range of extra rules to enhance the linting of your code.
+This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of extra rules to enhance the linting of your code.
 
 ## Install
 
@@ -37,17 +37,18 @@ You can now include `html` and `markdown` in the list of files passed to esLint 
 
 This configuration contains the following esLint plugins.
 
-* [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
-* [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
-* [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
-* [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
-* [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
-* [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
-* [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
-* [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
-* [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
-* [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
-* [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
+- [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
+- [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
+- [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
+- [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
+- [eslint-plugin-no-secrets](https://github.com/dustinspecker/eslint-plugin-no-secrets)
+- [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
+- [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
+- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
 ## Rules
 
@@ -80,5 +81,6 @@ switch (foo) {
 ```
 
 ## License
+
 Copyright &copy; 2019 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).

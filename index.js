@@ -6,11 +6,12 @@ module.exports = {
     // './rules/json', // flaky
     './rules/markdown',
     './rules/no-constructor-bind',
+    './rules/no-secrets',
     './rules/no-use-extend-native',
     './rules/promise',
     './rules/sonar',
     './rules/simple-import-sort',
     './rules/switch-case',
-    './rules/unicorn'
-  ].map(require.resolve)
+    './rules/unicorn',
+  ].map(require.resolve),
 }
