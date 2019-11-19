@@ -62,7 +62,7 @@ The following esLint plugins are always loaded in this configuration:
 - [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
-## Library Plugins
+### Library Plugins
 
 These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugin will be loaded. The following packages are supported:
 
