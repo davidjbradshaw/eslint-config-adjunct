@@ -8,17 +8,10 @@ This config is designed to be used alongside any of the major esLint configs, su
 
 ## Install
 
-To run this config you will need to install it along with it's `peerDependancies`.
+To install this config, run the following command.
 
 ```sh
-npx install-peerdeps --dev eslint-config-adjunct
-```
-
-If you have problems with the above command, then you will need to run `install-peerdeps` locally.
-
-```sh
-npm install -g install-peerdeps
-install-peerdeps --dev eslint-config-adjunct
+npm install eslint-config-adjunct --save-dev
 ```
 
 ## Configure
@@ -42,9 +35,17 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 }
 ```
 
-## Plugins
+## Install Dependencies
 
-The following esLint plugins are contained in this configuration.
+After you have configured eslint to include this package, the first time you run `eslint` it will output the `npm` command to install the dependancies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
+
+### Plugins
+
+
+
+### Base Plugins
+
+The following esLint plugins are always loaded in this configuration:
 
 - [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
 - [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
@@ -60,6 +61,18 @@ The following esLint plugins are contained in this configuration.
 - [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 - [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+
+## Library Plugins
+
+These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugin will be loaded. The following packages are supported:
+
+ -
+
+### Test Libraries
+
+Test plugins are loaded based on which testing tools you have listed in `devDependencies` of `package.json`. The following test plugins are supported:
+
+ -
 
 ## Rules
 
