@@ -106,5 +106,5 @@ switch (foo) {
 
 ## License
 
-Copyright &copy; 2019 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Copyright &copy; 2019-20 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).
