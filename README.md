@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/davidjbradshaw/eslint-config-adjunct.svg)](https://greenkeeper.io/)
+
 
 > _A mildly opinionated collection of the best *esLint plugins* to use alongside your main eslint configuration._
 
