@@ -115,7 +115,7 @@ switch (foo) {
 
 ### Disabled rules
 
-The following rules are disabled due to them being considered unduely strictive or unhelpful.
+The following rules are disabled due to them being considered unduely restrictive or unhelpful.
 
 - jest/no-disabled-tests
 - react-redux/prefer-separate-component-file
