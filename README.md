@@ -66,7 +66,7 @@ These plugins will be loaded in based on your project `dependencies` in `package
 - [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash)
 - [eslint-plugin-lodash-fp](https://github.com/jfmengels/eslint-plugin-lodash-fp)
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda)
-- [eslint-plugin-redux-react](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
+- [eslint-plugin-react-redux](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
 - [eslint-plugin-redux-saga](https://github.com/pke/eslint-plugin-redux-saga)
 
 ### Prettier
