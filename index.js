@@ -22,14 +22,16 @@ const rules = [
 
 // Optionals rules besed on project dependencies
 const depRules = [
-  'jest',
-  ['jest', 'jest-async'],
   'lodash',
   'lodash-fp',
   'ramda',
   'react-redux',
   ['redux', 'fsa'],
   'redux-saga',
+  'jasmine',
+  'jest',
+  ['jest', 'jest-async'],
+  'mocha',
   'prettier',
 ]
 depRules.forEach((depRule) => {

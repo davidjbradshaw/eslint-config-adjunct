@@ -22,7 +22,7 @@ module.exports = {
       },
     },
   ],
-  plugins: ['jest', 'jest-async'],
+  plugins: ['jest'],
   rules: {
     'jest/no-disabled-tests': 'off',
 
