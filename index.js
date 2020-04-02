@@ -23,6 +23,7 @@ const rules = [
 // Optionals rules besed on project dependencies
 const depRules = [
   'jest',
+  'ramda',
   'react-redux',
   ['redux', 'fsa'],
   'redux-saga',
