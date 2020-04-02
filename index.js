@@ -24,6 +24,8 @@ const rules = [
 const depRules = [
   'jest',
   ['jest', 'jest-async'],
+  'lodash',
+  'lodash-fp',
   'ramda',
   'react-redux',
   ['redux', 'fsa'],
