@@ -60,7 +60,7 @@ The following esLint plugins are always loaded in this configuration:
 
 ### Library Plugins
 
-These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugin will be loaded. The following packages are supported:
+These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugins will be loaded. The following packages are supported:
 
 - [eslint-plugin-fsa]() - (Redux)
 - [eslint-plugin-ramda]()
@@ -68,12 +68,10 @@ These plugins will be loaded in based on your project `dependencies` in `package
 
 ### Prettier
 
-If prettier is installed, any rules that may conflict with setting in prettier will be disabled.
+If prettier is installed, any rules that may conflict with setting in Prettier will be disabled. The plugin should read you Prettier config from your projects route.
 
 - [eslint-config-prettier]()
 - [eslint-plugin-prettier]()
-
-The Prettier pluging should read you Prettier config from your projects route.
 
 ### Test Libraries
 
@@ -92,7 +90,7 @@ When linting code snippets in Markdown files, a few rules relating to globals an
 
 ### Switch-Case
 
-Adds thes `fallthrough: 'never'` option to the the `newlint-between-switch-case` rule.
+Adds the `fallthrough: 'never'` option to the the `newlint-between-switch-case` rule.
 
 ```js
 // Good
