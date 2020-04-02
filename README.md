@@ -2,7 +2,7 @@
 
 > _A mildly opinionated collection of the best *esLint plugins* to use alongside your main eslint configuration._
 
-This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time consuming to setup and any easy way to install just the plugins you need on your project.
+This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time consuming to setup and provides an easy way to install just the plugins you need on your project.
 
 ## Install
 
