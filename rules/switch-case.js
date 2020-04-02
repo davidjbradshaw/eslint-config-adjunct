@@ -5,7 +5,7 @@ module.exports = {
     'switch-case/newline-between-switch-case': [
       'error',
       'always',
-      { fallthrough: 'never' }
-    ]
-  }
+      { fallthrough: 'never' },
+    ],
+  },
 }

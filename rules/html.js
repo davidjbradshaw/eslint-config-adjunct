@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: ['html']
+  plugins: ['html'],
 }

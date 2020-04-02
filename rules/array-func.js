@@ -4,6 +4,6 @@ module.exports = {
   rules: {
     // Rules not in recommended config
     'array-func/prefer-flat': 0,
-    'array-func/prefer-flat-map': 0
-  }
+    'array-func/prefer-flat-map': 0,
+  },
 }
