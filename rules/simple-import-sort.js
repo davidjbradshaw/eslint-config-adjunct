@@ -3,6 +3,6 @@ module.exports = {
   rules: {
     'simple-import-sort/sort': 'error',
     'sort-imports': 'off',
-    'import/order': 'off'
-  }
+    'import/order': 'off',
+  },
 }

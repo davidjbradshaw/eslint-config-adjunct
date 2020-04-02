@@ -5,6 +5,6 @@ module.exports = {
     // Rules are not in recommended config
     'eslint-comments/no-restricted-disable': 0,
     'eslint-comments/no-unused-disable': 0,
-    'eslint-comments/no-use': 0
-  }
+    'eslint-comments/no-use': 0,
+  },
 }

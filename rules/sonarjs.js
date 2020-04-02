@@ -1,4 +1,4 @@
 module.exports = {
   plugins: ['sonarjs'],
-  extends: ['plugin:sonarjs/recommended']
+  extends: ['plugin:sonarjs/recommended'],
 }
