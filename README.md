@@ -62,9 +62,9 @@ The following esLint plugins are always loaded in this configuration:
 
 These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugins will be loaded. The following packages are supported:
 
-- [eslint-plugin-fsa]() - (Redux)
+- [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa) - Flux Standard Action
 - [eslint-plugin-ramda]()
-- [eslint-plugin-redux-react]()
+- [eslint-plugin-redux-react](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
 
 ### Prettier
 
@@ -87,6 +87,10 @@ In the most part the default rules are used for the plugins listed above, with t
 ### Markdown
 
 When linting code snippets in Markdown files, a few rules relating to globals and unused vars are disabled.
+
+### React-Redux
+
+The `react-redux/prefer-separate-component-file` is disabled.
 
 ### Switch-Case
 
