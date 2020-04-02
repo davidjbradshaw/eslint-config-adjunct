@@ -1,7 +1,7 @@
 const isModuleAvailable = require('./lib/isModuleAvailable')
+const { hasAnyDep } = require('./lib/utils')
 
-// eslint-disable-next-line unicorn/prevent-abbreviations
-const moduleNotAvailable = pkg => !isModuleAvailable(pkg)
+const moduleNotAvailable = (pkg) => !isModuleAvailable(pkg)
 
 const rules = [
   'array-func',
@@ -17,10 +17,26 @@ const rules = [
   'sonarjs',
   'simple-import-sort',
   'switch-case',
-  'unicorn'
+  'unicorn',
 ]
 
-const notInstalled = rules.map(plugin => `eslint-plugin-${plugin}`).filter(moduleNotAvailable)
+const depRules = ['prettier']
+
+depRules.forEach((depRule) => {
+  const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
+  if (hasAnyDep(rule[1])) rules.push(rule[0])
+})
+
+const notInstalled = rules
+  .map((plugin) => `eslint-plugin-${plugin}`)
+  .filter(moduleNotAvailable)
+
+if (
+  notInstalled.includes('eslint-plugin-prettier') &&
+  moduleNotAvailable('eslint-config-prettier')
+) {
+  notInstalled.push('eslint-config-prettier')
+}
 
 if (notInstalled.length !== 0) {
   console.log(`
@@ -38,6 +54,8 @@ npm install ${notInstalled.join(' ')} --save-dev
   process.exit(1) // eslint-disable-line unicorn/no-process-exit
 }
 
+console.log(rules)
+
 module.exports = {
-  extends: rules.map(plugin => require.resolve(`./rules/${plugin}`)),
+  extends: rules.map((plugin) => require.resolve(`./rules/${plugin}`)),
 }
