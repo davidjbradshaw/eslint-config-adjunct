@@ -71,7 +71,7 @@ These plugins will be loaded in based on your project `dependencies` in `package
 
 ### Prettier
 
-If prettier is installed, any rules that may conflict with setting in Prettier will be disabled. The plugin should read you Prettier config from your projects route.
+If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your projects route.
 
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
