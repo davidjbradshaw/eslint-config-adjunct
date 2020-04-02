@@ -23,6 +23,7 @@ const rules = [
 // Optionals rules besed on project dependencies
 const depRules = [
   'jest',
+  ['jest', 'jest-async'],
   'ramda',
   'react-redux',
   ['redux', 'fsa'],
@@ -35,10 +36,7 @@ depRules.forEach((depRule) => {
 })
 
 // Extra required optional packages
-const extraInstallPkg = [
-  ['prettier', 'eslint-config-prettier'],
-  ['jest', 'eslint-plugin-jest-async'],
-]
+const extraInstallPkg = [['prettier', 'eslint-config-prettier']]
 
 checkMissing(rules, extraInstallPkg)
 showLoaded(rules, extraInstallPkg)
