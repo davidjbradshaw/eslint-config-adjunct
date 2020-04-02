@@ -21,7 +21,13 @@ const rules = [
 ]
 
 // Optionals rules besed on project dependencies
-const depRules = ['jest', ['redux', 'fsa'], 'react-redux', 'prettier']
+const depRules = [
+  'jest',
+  'react-redux',
+  ['redux', 'fsa'],
+  'redux-saga',
+  'prettier',
+]
 depRules.forEach((depRule) => {
   const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
   if (hasAnyDep(rule[0])) rules.push(rule[1])
