@@ -1,7 +1,5 @@
 # eslint-config-adjunct
 
-
-
 > _A mildly opinionated collection of the best *esLint plugins* to use alongside your main eslint configuration._
 
 This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of extra rules to enhance the linting of your code.
@@ -41,8 +39,6 @@ After you have configured eslint to include this package, the first time you run
 
 ## Plugins
 
-
-
 ### Base Plugins
 
 The following esLint plugins are always loaded in this configuration:
@@ -66,13 +62,25 @@ The following esLint plugins are always loaded in this configuration:
 
 These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugin will be loaded. The following packages are supported:
 
- -
+- [eslint-plugin-fsa]() - (Redux)
+- [eslint-plugin-ramda]()
+- [eslint-plugin-redux-react]()
+
+### Prettier
+
+If prettier is installed, any rules that may conflict with setting in prettier will be disabled.
+
+- [eslint-config-prettier]()
+- [eslint-plugin-prettier]()
+
+The Prettier pluging should read you Prettier config from your projects route.
 
 ### Test Libraries
 
 Test plugins are loaded based on which testing tools you have listed in `devDependencies` of `package.json`. The following test plugins are supported:
 
- -
+- [eslint-plugin-jest]()
+- [eslint-plugin-jest-async]()
 
 ## Rules
 
