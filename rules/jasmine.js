@@ -17,4 +17,7 @@ module.exports = {
     },
   ],
   plugins: ['jasmine'],
+  rules: {
+    'jasmine/valid-expect': 0,
+  },
 }
