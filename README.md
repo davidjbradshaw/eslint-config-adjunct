@@ -65,6 +65,7 @@ These plugins will be loaded in based on your project `dependencies` in `package
 - [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa) - Flux Standard Action
 - [eslint-plugin-ramda]()
 - [eslint-plugin-redux-react](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
+- [eslint-plugin-redux-saga](https://github.com/pke/eslint-plugin-redux-saga)
 
 ### Prettier
 
@@ -88,10 +89,6 @@ In the most part the default rules are used for the plugins listed above, with t
 
 When linting code snippets in Markdown files, a few rules relating to globals and unused vars are disabled.
 
-### React-Redux
-
-The `react-redux/prefer-separate-component-file` is disabled.
-
 ### Switch-Case
 
 Adds the `fallthrough: 'never'` option to the the `newlint-between-switch-case` rule.
@@ -113,6 +110,13 @@ switch (foo) {
     defaultThing()
 }
 ```
+
+### Disabled rules
+
+The following rules are disabled due to them being consider unduely strict or unhelpful.
+
+- react-redux/prefer-separate-component-file
+- redux-saga/no-unhandled-errors
 
 ## License
 
