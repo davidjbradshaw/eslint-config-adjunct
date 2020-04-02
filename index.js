@@ -21,7 +21,7 @@ const rules = [
 ]
 
 // Optionals rules besed on project dependencies
-const depRules = ['prettier']
+const depRules = ['jest', ['redux', 'fsa'], 'prettier']
 depRules.forEach((depRule) => {
   const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
   if (hasAnyDep(rule[1])) rules.push(rule[0])
