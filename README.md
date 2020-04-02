@@ -71,15 +71,15 @@ These plugins will be loaded in based on your project `dependencies` in `package
 
 If prettier is installed, any rules that may conflict with setting in Prettier will be disabled. The plugin should read you Prettier config from your projects route.
 
-- [eslint-config-prettier]()
-- [eslint-plugin-prettier]()
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
 ### Test Libraries
 
 Test plugins are loaded based on which testing tools you have listed in `devDependencies` of `package.json`. The following test plugins are supported:
 
-- [eslint-plugin-jest]()
-- [eslint-plugin-jest-async]()
+- [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest)
+- [eslint-plugin-jest-async](https://www.npmjs.com/package/eslint-plugin-jest-async)
 
 ## Rules
 
@@ -113,8 +113,9 @@ switch (foo) {
 
 ### Disabled rules
 
-The following rules are disabled due to them being consider unduely strict or unhelpful.
+The following rules are disabled due to them being considered unduely strictive or unhelpful.
 
+- jest/no-disabled-tests
 - react-redux/prefer-separate-component-file
 - redux-saga/no-unhandled-errors
 
