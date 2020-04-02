@@ -10,7 +10,7 @@ const rules = [
   'json-format',
   'markdown',
   'no-constructor-bind',
-  'no-secrets',
+  // 'no-secrets', // latest version is buggy
   'no-use-extend-native',
   'optimize-regex',
   'promise',
