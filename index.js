@@ -45,6 +45,9 @@ const extraInstallPkg = [['prettier', 'eslint-config-prettier']]
 checkMissing(rules, extraInstallPkg)
 showLoaded(rules, extraInstallPkg)
 
+// Disable some rules in unit tests
+rules.push('test-overrides')
+
 module.exports = {
   extends: rules.map((plugin) => require.resolve(`./rules/${plugin}`)),
 }
