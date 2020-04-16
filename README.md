@@ -99,7 +99,7 @@ For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adj
 
 ### Switch-Case
 
-Adds the `fallthrough: 'never'` option to the the `newlint-between-switch-case` rule.
+Adds the `fallthrough: 'never'` option to the the `newline-between-switch-case` rule.
 
 ```js
 // Good
