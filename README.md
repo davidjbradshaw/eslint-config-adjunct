@@ -91,7 +91,11 @@ In the most part the default rules are used for the plugins listed above, with t
 
 ### Markdown
 
-When linting code snippets in Markdown files, a few rules relating to globals and unused vars are disabled.
+When linting code snippets in Markdown files, a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/markdown.js#L3) relating to globals and unused vars are disabled.
+
+### Tests
+
+For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test code styles.
 
 ### Switch-Case
 
