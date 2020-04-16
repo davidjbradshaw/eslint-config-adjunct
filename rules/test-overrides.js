@@ -4,10 +4,10 @@ module.exports = {
       files: [
         '**/*.spec.js',
         '**/*.test.js',
-        'tests/**',
-        'test/**',
-        '__test__/**',
-        '__tests__/**',
+        '**/tests/**',
+        '**/test/**',
+        '**/__test__/**',
+        '**/__tests__/**',
       ],
       rules: {
         'func-names': 'off',
