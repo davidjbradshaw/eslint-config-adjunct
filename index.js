@@ -23,7 +23,7 @@ const rules = [
 // Optionals rules besed on project dependencies
 const depRules = [
   'lodash',
-  'lodash-fp',
+  ['lodash', 'lodash-fp'],
   'ramda',
   'react-redux',
   ['redux', 'fsa'],
