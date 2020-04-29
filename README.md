@@ -126,6 +126,14 @@ The following rules are disabled due to them being considered unduely restrictiv
 - jest/no-disabled-tests
 - react-redux/prefer-separate-component-file
 - redux-saga/no-unhandled-errors
+- lodash/prefer over native rules
+- lodash-fp/use-fp
+
+The following rules are disabled due to clashing with other plugins
+
+- array-func/prefer-array-from
+- import/order
+- sort-imports
 
 ## License
 
