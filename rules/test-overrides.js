@@ -18,6 +18,8 @@ module.exports = {
         'max-statements': 'off',
         'promise/always-return': 'off',
         'promise/no-callback-in-promise': 'off',
+        'sonarjs/no-duplicate-string': 'off',
+        'sonarjs/no-identical-functions': 'off'
       },
     },
   ],
