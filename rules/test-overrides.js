@@ -19,7 +19,7 @@ module.exports = {
         'promise/always-return': 'off',
         'promise/no-callback-in-promise': 'off',
         'sonarjs/no-duplicate-string': 'off',
-        'sonarjs/no-identical-functions': 'off'
+        'sonarjs/no-identical-functions': 'off',
       },
     },
   ],
