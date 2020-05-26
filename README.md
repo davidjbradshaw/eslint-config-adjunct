@@ -128,6 +128,8 @@ The following rules are disabled due to them being considered unduly restrictive
 - redux-saga/no-unhandled-errors
 - lodash/prefer over native rules
 - lodash-fp/use-fp
+- unicorn/no-reduce
+- unicorn/no-null
 
 The following rules are disabled due to clashing with other plugins
 
