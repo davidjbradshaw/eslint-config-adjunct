@@ -2,7 +2,7 @@
 
 > _A reasonable collection of *plugins* to use alongside your main esLint configuration._
 
-This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time consuming to setup and provides an easy way to install just the plugins you need, based on your project's dependancies.
+This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time-consuming to setup and provides an easy way to install just the plugins you need, based on your project's dependencies.
 
 ## Install
 
@@ -22,7 +22,7 @@ Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `e
 }
 ```
 
-You can now include `html`, `json` and `markdown` in the list of files passed to esLint to have any contained JavaScript linted.
+You can now include `html`, `json` and `markdown` in the list of files passed to `eslint` to lint any JavaScript contained.
 
 ```json
 {
@@ -35,7 +35,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 
 ## Install Dependencies
 
-After you have configured eslint to include this package, the first time you run `eslint` it will output the `npm` command to install the dependancies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
+After you have configured `eslint` to include this package, the first time you run `eslint` it will output the `npm` command to install the dependencies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
 
 ## Plugins
 
@@ -71,7 +71,7 @@ These plugins will be loaded in based on your project `dependencies` in `package
 
 ### Prettier
 
-If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your projects route.
+If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your project's root.
 
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
@@ -99,7 +99,7 @@ For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adj
 
 ### Switch-Case
 
-Adds the `fallthrough: 'never'` option to the the `newline-between-switch-case` rule.
+Adds the `fallthrough: 'never'` option to the `newline-between-switch-case` rule.
 
 ```js
 // Good
@@ -121,7 +121,7 @@ switch (foo) {
 
 ### Disabled rules
 
-The following rules are disabled due to them being considered unduely restrictive or unhelpful.
+The following rules are disabled due to them being considered unduly restrictive or unhelpful.
 
 - jest/no-disabled-tests
 - react-redux/prefer-separate-component-file
