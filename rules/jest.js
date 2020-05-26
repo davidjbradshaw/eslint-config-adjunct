@@ -18,11 +18,13 @@ module.exports = {
     // Not included in jest/recommended
     'jest/consistent-test-it': 0,
     'jest/lowercase-name': 0,
+    'jest/no-deprecated-functions': 0,
     'jest/no-duplicate-hooks': 0,
     'jest/no-expect-resolves': 0,
     'jest/no-hooks': 0,
     'jest/no-if': 0,
     'jest/no-large-snapshots': 0,
+    ' jest/no-restricted-matchers': 0,
     'jest/no-test-return-statement': 0,
     'jest/no-truthy-falsy': 0,
     'jest/prefer-called-with': 0,
