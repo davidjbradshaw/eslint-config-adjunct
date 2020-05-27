@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-> _A reasonable collection of *plugins* to use alongside your main esLint configuration._
+> _A reasonable collection of *plugins* to use alongside your main esLint configuration_
 
 This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time-consuming to setup and provides an easy way to install just the plugins you need, based on your project's dependencies.
 
@@ -32,6 +32,8 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
   }
 }
 ```
+
+If you are using TypeScript, the following [config](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) is recommended.
 
 ## Install Dependencies
 
@@ -75,6 +77,8 @@ If prettier is installed, any rules that may conflict with Prettier will be disa
 
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+
+The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into you project.
 
 ### Test Libraries
 

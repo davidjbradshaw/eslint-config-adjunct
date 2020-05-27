@@ -10,7 +10,6 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
     "airbnb-typescript",
     "airbnb/hooks",
     "adjunct",
-    "prettier/@typescript-eslint",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
