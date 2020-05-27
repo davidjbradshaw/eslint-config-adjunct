@@ -33,7 +33,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 }
 ```
 
-If you are using TypeScript, the following [config](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) is recommended.
+If you are using TypeScript, the following [sample config](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) is recommended.
 
 ## Install Dependencies
 
