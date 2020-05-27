@@ -34,6 +34,7 @@ const depRules = [
   'mocha',
   'prettier',
 ]
+
 depRules.forEach((depRule) => {
   const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
   if (hasAnyDep(rule[0])) rules.push(rule[1])
