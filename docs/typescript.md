@@ -6,17 +6,17 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
 ```json
 {
   "extends": [
-    "airbnb",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "airbnb-typescript",
     "airbnb/hooks",
     "adjunct",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "prettier/@typescript-eslint",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 9,
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "rules": {
     "react/prop-types": 0,
