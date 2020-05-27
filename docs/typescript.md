@@ -6,7 +6,7 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
 ```json
 {
   "extends": [
-    "airbnb",
+    "airbnb-typescript",
     "airbnb/hooks",
     "adjunct",
     "plugin:@typescript-eslint/recommended",
