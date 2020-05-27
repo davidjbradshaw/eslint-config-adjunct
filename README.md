@@ -78,7 +78,7 @@ If prettier is installed, any rules that may conflict with Prettier will be disa
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
-The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into you project.
+The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
 
 ### Test Libraries
 
