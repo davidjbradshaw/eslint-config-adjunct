@@ -13,8 +13,6 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
     "project": "./tsconfig.json"
   },
   "rules": {
