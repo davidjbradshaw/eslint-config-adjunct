@@ -1,6 +1,6 @@
-Vue
+## Vue
 
-Example Vue config.
+Example Vue configuration with AirBnB rules.
 
 ```js
 module.exports = {
