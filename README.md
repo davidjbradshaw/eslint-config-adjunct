@@ -33,7 +33,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 }
 ```
 
-Example configuration for [TypeScript](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) and [Vue](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/vue.md).
+Example configurations for [TypeScript](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) and [Vue](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/vue.md).
 
 ## Install Dependencies
 
