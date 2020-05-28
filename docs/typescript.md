@@ -18,8 +18,7 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
     "project": "./tsconfig.json"
   },
   "rules": {
-    "react/prop-types": 0,
-    "@typescript-eslint/interface-name-prefix": 0
+    "react/prop-types": "off"
   }
 }
 ```
