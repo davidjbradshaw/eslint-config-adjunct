@@ -14,7 +14,7 @@ npm install eslint-config-adjunct --save-dev
 
 ## Configure
 
-Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `extends` array. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrc` should look like this:
+Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `extends` array. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrc` should look like the following. For more advanced use cases see the example configurations for [TypeScript](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) and [Vue](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/vue.md).
 
 ```json
 {
@@ -33,7 +33,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 }
 ```
 
-Example configurations for [TypeScript](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) and [Vue](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/vue.md).
+
 
 ## Install Dependencies
 
