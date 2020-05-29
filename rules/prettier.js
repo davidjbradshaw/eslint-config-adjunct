@@ -7,7 +7,7 @@ const optionalConfigs = [
   'babel',
   'flowtype',
   'react',
-  'standard',
+  ['eslint-config-standard', 'prettier/standard'],
   'vue',
   'unicorn',
 ]
@@ -21,7 +21,7 @@ optionalConfigs.forEach((optConfig) => {
   if (hasAnyDep(config[0])) configs.push(config[1])
 })
 
-console.log(`  eslint-config-${configs.join('\n  eslint-config-')}\n`)
+console.log(configs.map((config) => `  eslint-config-${config}\n`).join(''))
 
 module.exports = {
   extends: configs,
