@@ -33,10 +33,12 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^4.7.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-find-rules": "^3.4.0",
     "eslint-plugin-array-func": "^3.1.5",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-fsa": "^1.0.12",
     "eslint-plugin-html": "^6.0.2",

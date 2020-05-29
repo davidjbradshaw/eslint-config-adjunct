@@ -22,6 +22,7 @@ const rules = [
 
 // Optionals rules besed on project dependencies
 const depRules = [
+  'cypress',
   'lodash',
   ['lodash', 'lodash-fp'],
   'ramda',
@@ -44,7 +45,11 @@ depRules.forEach((depRule) => {
 const extraInstallPkg = [['prettier', 'eslint-config-prettier']]
 
 checkMissing(rules, extraInstallPkg)
-showLoaded(rules, extraInstallPkg)
+showLoaded(rules, [])
+
+if (extraInstallPkg.length !== 1) {
+  console.log(' ')
+}
 
 // Disable some rules in unit tests
 rules.push('test-overrides')
