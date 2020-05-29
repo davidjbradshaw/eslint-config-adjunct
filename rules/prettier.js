@@ -21,6 +21,8 @@ optionalConfigs.forEach((optConfig) => {
   if (hasAnyDep(config[0])) configs.push(config[1])
 })
 
+console.log(`  eslint-config-${configs.join('\n  eslint-config-')}\n`)
+
 module.exports = {
   extends: configs,
   plugins: ['prettier'],
