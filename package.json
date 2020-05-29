@@ -11,8 +11,8 @@
   "main": "index.js",
   "scripts": {
     "ci-test": "npm run test",
-    "eslint": "eslint --color  *.{js,json,md} rules/*.js",
-    "eslint:fix": "eslint --color --fix  *.{js,md} rules/*.js",
+    "eslint": "eslint --color  *.{js,json,md} rules/**.js lib/**.js docs/**.md",
+    "eslint:fix": "eslint --color --fix  *.{js,md} rules/**.js lib/**.js docs/**.md",
     "prepublishOnly": "eslint-find-rules --unused --no-core",
     "test": "npm run eslint && npm run prepublishOnly"
   },
