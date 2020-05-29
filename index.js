@@ -22,7 +22,6 @@ const rules = [
 
 // Optionals rules besed on project dependencies
 const depRules = [
-  'cypress',
   'lodash',
   ['lodash', 'lodash-fp'],
   'ramda',
@@ -33,6 +32,7 @@ const depRules = [
   'jest',
   ['jest', 'jest-async'],
   'mocha',
+  'cypress',
   'prettier',
 ]
 
