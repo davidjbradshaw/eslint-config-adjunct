@@ -84,11 +84,11 @@ The prettier configs for different eslint plugins are also automatically include
 
 Test plugins are loaded based on which testing tools you have listed in `devDependencies` of `package.json`. The following test plugins are supported:
 
-- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 - [eslint-plugin-jasmine](https://github.com/tlvince/eslint-plugin-jasmine)
 - [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest)
 - [eslint-plugin-jest-async](https://www.npmjs.com/package/eslint-plugin-jest-async)
 - [eslint-plugin-mocha](https://github.com/lo1tuma/eslint-plugin-mocha)
+- [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 
 ## Rules
 
