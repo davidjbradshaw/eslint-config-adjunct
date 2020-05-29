@@ -5,5 +5,6 @@ module.exports = {
     'unicorn/regex-shorthand': 0,
     'unicorn/no-reduce': 0,
     'unicorn/no-null': 0,
+    'unicorn/prefer-optional-catch-binding': 0,
   },
 }

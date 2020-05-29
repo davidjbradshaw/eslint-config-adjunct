@@ -135,6 +135,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - lodash-fp/use-fp
 - unicorn/no-reduce
 - unicorn/no-null
+- unicorn/prefer-optional-catch-binding
 
 The following rules are disabled due to clashing with other plugins
 
