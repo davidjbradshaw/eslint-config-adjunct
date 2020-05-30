@@ -28,10 +28,17 @@ const depRules = [
   'react-redux',
   ['redux', 'fsa'],
   'redux-saga',
+  // Test tools
+  'ava',
+  ['chai', 'chai-expect'],
+  ['chai', 'chai-friendly'],
   'jasmine',
   'jest',
   ['jest', 'jest-async'],
   'mocha',
+  ['mocha', 'mocha-cleanup'],
+  'qunit',
+  ['grunt-contrib-qunit', 'qunit'],
   'cypress',
   'prettier',
 ]
