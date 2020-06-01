@@ -36,5 +36,7 @@ module.exports = {
     'scanjs-rules/property_localStorage': 1,
     'scanjs-rules/property_mgmt': 1,
     'scanjs-rules/property_sessionStorage': 1,
+
+    'scanjs-rules/call_setAttribute_mozbrowser': 0,
   },
 }
