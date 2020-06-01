@@ -18,7 +18,7 @@ const rules = [
   'unicorn',
 
   // Security Rules
-  'no-secrets',
+  'no-secrets@0.5.4',
   'scanjs-rules',
   'security',
   'sonarjs',
@@ -63,5 +63,7 @@ showLoaded(rules, [])
 rules.push('test-overrides')
 
 module.exports = {
-  extends: rules.map((plugin) => require.resolve(`./rules/${plugin}`)),
+  extends: rules.map((plugin) =>
+    require.resolve(`./rules/${plugin.split('@')[0]}`)
+  ),
 }
