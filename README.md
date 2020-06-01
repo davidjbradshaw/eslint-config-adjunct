@@ -52,11 +52,9 @@ The following esLint plugins are always loaded in this configuration:
 - [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
 - [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
 - [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
-- [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
 - [eslint-plugin-optimize-regex](https://github.com/BrainMaestro/eslint-plugin-optimize-regex)
 - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
 - [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
-- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 - [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
@@ -79,6 +77,15 @@ If prettier is installed, any rules that may conflict with Prettier will be disa
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
 The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
+
+### Security 
+
+These plugins add code security rules to esLint.
+
+- [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
+- [eslint-plugin-scanjs-rules](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)
+- [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 
 ### Test Libraries
 

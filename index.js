@@ -10,14 +10,18 @@ const rules = [
   'json-format',
   'markdown',
   'no-constructor-bind',
-  // 'no-secrets', // latest version is buggy
   'no-use-extend-native',
   'optimize-regex',
   'promise',
-  'sonarjs',
   'simple-import-sort',
   'switch-case',
   'unicorn',
+
+  // Security Rules
+  'no-secrets',
+  'scanjs-rules',
+  'security',
+  'sonarjs',
 ]
 
 // Optionals rules besed on project dependencies
@@ -28,6 +32,7 @@ const depRules = [
   'react-redux',
   ['redux', 'fsa'],
   'redux-saga',
+
   // Test tools
   'ava',
   ['chai', 'chai-expect'],
