@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-adjunct",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
