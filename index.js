@@ -1,62 +1,8 @@
 const checkMissing = require('./lib/missing')
 const showLoaded = require('./lib/loaded')
-const { hasAnyDep } = require('./lib/utils')
+const { rules, extraInstallPackage } = require('./packages')
 
-// Base rules
-const rules = [
-  'array-func',
-  'eslint-comments',
-  'html',
-  'json-format',
-  'markdown',
-  'no-constructor-bind',
-  'no-use-extend-native',
-  'optimize-regex',
-  'promise',
-  'simple-import-sort',
-  'switch-case',
-  'unicorn',
-
-  // Security Rules
-  'no-secrets@0.5.4',
-  'scanjs-rules',
-  'security',
-  'sonarjs',
-]
-
-// Optionals rules besed on project dependencies
-const depRules = [
-  'lodash',
-  ['lodash', 'lodash-fp'],
-  'ramda',
-  'react-redux',
-  ['redux', 'fsa'],
-  'redux-saga',
-
-  // Test tools
-  'ava',
-  ['chai', 'chai-expect'],
-  ['chai', 'chai-friendly'],
-  'jasmine',
-  'jest',
-  ['jest', 'jest-async'],
-  'mocha',
-  ['mocha', 'mocha-cleanup'],
-  'qunit',
-  ['grunt-contrib-qunit', 'qunit'],
-  'cypress',
-  'prettier',
-]
-
-depRules.forEach((depRule) => {
-  const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
-  if (hasAnyDep(rule[0])) rules.push(rule[1])
-})
-
-// Extra required optional packages
-const extraInstallPkg = [['prettier', 'eslint-config-prettier']]
-
-checkMissing(rules, extraInstallPkg)
+checkMissing(rules, extraInstallPackage)
 showLoaded(rules, [])
 
 // Disable some rules in unit tests

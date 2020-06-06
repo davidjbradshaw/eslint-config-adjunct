@@ -3,5 +3,5 @@ module.exports = {
   extends: ['plugin:security/recommended'],
   rules: {
     'security/detect-object-injection': 0,
-  }
+  },
 }

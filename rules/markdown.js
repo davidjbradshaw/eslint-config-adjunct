@@ -2,7 +2,7 @@ module.exports = {
   plugins: ['markdown'],
   overrides: [
     {
-      files: ['**/*.md'],
+      files: ['*.md', '**/*.md'],
       parserOptions: {
         ecmacFeatures: {
           impliedStrict: true,
@@ -17,7 +17,6 @@ module.exports = {
         'no-unused-vars': 'off',
         'prefer-reflect': 'off',
         strict: 'off',
-        'unicorn/filename-case': 'off',
       },
     },
   ],

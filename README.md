@@ -62,7 +62,7 @@ The following esLint plugins are always loaded in this configuration:
 
 These plugins will be loaded in based on your project `dependencies` in `package.json`. If a supported library is part of your project then it's related esLint plugins will be loaded. The following packages are supported:
 
-- [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa) - Flux Standard Action
+- [eslint-plugin-fsa](https://github.com/joseph-galindo/eslint-plugin-fsa)
 - [eslint-plugin-lodash](https://github.com/wix/eslint-plugin-lodash)
 - [eslint-plugin-lodash-fp](https://github.com/jfmengels/eslint-plugin-lodash-fp)
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda)
@@ -83,6 +83,7 @@ The prettier configs for different eslint plugins are also automatically include
 These plugins add code security rules to esLint.
 
 - [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
+- [eslint-plugin-no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
 - [eslint-plugin-scanjs-rules](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
 - [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
