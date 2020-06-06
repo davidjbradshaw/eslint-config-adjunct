@@ -1,7 +1,7 @@
 {
   "extends": ["eslint:recommended", "./index.js"],
   "rules": {
-    "unicorn/filename-case": "off",
+    "security/detect-non-literal-fs-filename": "off",
     "unicorn/prevent-abbreviations": "off"
   },
   "env": {
