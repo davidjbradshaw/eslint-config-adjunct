@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "./index.js"],
+  "extends": ["airbnb", "./index.js"],
   "rules": {
     "security/detect-non-literal-fs-filename": "off",
     "unicorn/prevent-abbreviations": "off"
