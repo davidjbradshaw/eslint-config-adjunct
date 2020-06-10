@@ -1,6 +1,6 @@
 const checkMissing = require('./lib/missing')
 const showLoaded = require('./lib/loaded')
-const { rules, extraInstallPackage } = require('./packages')
+const { rules, extraInstallPackage } = require('./configs')
 
 checkMissing(rules, extraInstallPackage)
 showLoaded(rules, [])
