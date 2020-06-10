@@ -46,6 +46,7 @@ The following esLint plugins are always loaded in this configuration:
 - [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
 - [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
 - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
+- [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
 - [eslint-plugin-json-format](https://github.com/Bkucera/eslint-plugin-json-format)
 - [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
 - [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)

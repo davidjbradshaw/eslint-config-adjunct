@@ -1,15 +1,12 @@
 module.exports = {
-  plugins: ['no-secrets'],
-  rules: {
-    'no-secrets/no-secrets': 'error',
-  },
   overrides: [
     {
-      // Plugin does not play well with these filetypes
-      files: ['**/*.md', '**/*.json'],
+      plugins: ['no-secrets'],
       rules: {
-        'no-secrets/no-secrets': 'off',
+        'no-secrets/no-secrets': 'error',
       },
+      files: ['*', '*/**'],
+      excludedFiles: ['package.json', '**/package.js'],
     },
   ],
 }

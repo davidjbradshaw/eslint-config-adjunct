@@ -5,6 +5,7 @@ const rules = [
   'array-func',
   'eslint-comments',
   'html',
+  'json',
   'json-format',
   'markdown',
   'no-constructor-bind',
@@ -16,7 +17,7 @@ const rules = [
   'unicorn',
 
   // Security Rules
-  'no-secrets@0.5.4',
+  'no-secrets',
   'no-unsanitized',
   'scanjs-rules',
   'security',
