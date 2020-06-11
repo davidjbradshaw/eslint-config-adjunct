@@ -6,7 +6,7 @@ const rules = [
   'eslint-comments',
   'html',
   'json',
-  'json-format',
+  // 'json-format',
   'markdown',
   'no-constructor-bind',
   'no-use-extend-native',
