@@ -21,8 +21,11 @@ optionalConfigs.forEach((optConfig) => {
   if (hasAnyDep(config[0])) configs.push(config[1])
 })
 
-// eslint-disable-next-line no-console
-console.log(configs.map((config) => `  eslint-config-${config}\n`).join(''))
+if (!global.hasAdjunctPrettierLoaded) {
+  // eslint-disable-next-line no-console
+  console.log(configs.map((config) => `  eslint-config-${config}\n`).join(''))
+  global.hasAdjunctPrettierLoaded = true
+}
 
 module.exports = {
   extends: configs,

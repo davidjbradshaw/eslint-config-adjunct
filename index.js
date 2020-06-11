@@ -2,11 +2,15 @@ const checkMissing = require('./lib/missing')
 const showLoaded = require('./lib/loaded')
 const { rules, extraInstallPackage } = require('./configs')
 
-checkMissing(rules, extraInstallPackage)
-showLoaded(rules, [])
+// Workaround VS Code trying to run this file twice!
+if (!global.hasAdjunctLoaded) {
+  checkMissing(rules, extraInstallPackage)
+  showLoaded(rules, [])
 
-// Disable some rules in unit tests
-rules.push('test-overrides')
+  // Disable some rules in unit tests
+  rules.push('test-overrides')
+  global.hasAdjunctLoaded = true
+}
 
 module.exports = {
   extends: rules.map((plugin) =>
