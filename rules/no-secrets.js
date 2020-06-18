@@ -6,7 +6,12 @@ module.exports = {
         'no-secrets/no-secrets': 'error',
       },
       files: ['*', '*/**'],
-      excludedFiles: ['package.json', '**/package.json'],
+      excludedFiles: [
+        'package.json',
+        '**/package.json',
+        'package-lock.json',
+        '**/package-lock.json',
+      ],
     },
   ],
 }

@@ -1,14 +1,7 @@
 module.exports = {
   extends: ['plugin:unicorn/recommended'],
-  overrides: [
-    {
-      files: ['*.md', '**/*.md'],
-      rules: {
-        'unicorn/filename-case': 'off',
-      },
-    },
-  ],
   rules: {
+    'unicorn/filename-case': 0,
     'unicorn/prefer-exponentiation-operator': 0,
     'unicorn/regex-shorthand': 0,
     'unicorn/no-fn-reference-in-iterator': 0,
