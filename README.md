@@ -32,6 +32,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
   }
 }
 ```
+__* Delete filetypes as required__
 
 ## Install Dependencies
 
