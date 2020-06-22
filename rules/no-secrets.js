@@ -11,6 +11,8 @@ module.exports = {
         '**/package.json',
         'package-lock.json',
         '**/package-lock.json',
+        'tsconfig.json',
+        '**/tsconfig.json',
       ],
     },
   ],
