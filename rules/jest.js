@@ -18,6 +18,7 @@ module.exports = {
     // Not included in jest/recommended
     'jest/consistent-test-it': 0,
     'jest/lowercase-name': 0,
+    'jest/no-conditional-expect': 0,
     'jest/no-deprecated-functions': 0,
     'jest/no-duplicate-hooks': 0,
     'jest/no-expect-resolves': 0,
