@@ -15,6 +15,7 @@ switch (true) {
     ruleset = 'recommended'
 }
 
+// eslint-disable-next-line no-console
 console.log(`  eslint-plugin-testing-library/${ruleset}`)
 
 module.exports = {

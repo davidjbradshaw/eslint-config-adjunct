@@ -35,12 +35,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.md'],
-      parserOptions: {
-        ecmacFeatures: {
-          impliedStrict: true,
-        },
-      },
+      files: ['**.md', '**.json'],
       rules: {
         'prettier/prettier': 'off',
       },
