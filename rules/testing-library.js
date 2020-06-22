@@ -1,5 +1,24 @@
+const isModuleAvailable = require('../lib/is-module-available')
+
+let ruleset = ''
+
+switch (true) {
+  case isModuleAvailable('react'):
+    ruleset = 'react'
+    break
+
+  case isModuleAvailable('vue'):
+    ruleset = 'vue'
+    break
+
+  default:
+    ruleset = 'recommended'
+}
+
+console.log(`  eslint-plugin-testing-library/${ruleset}`)
+
 module.exports = {
-  extends: ['plugin:testing-library/recommended'],
+  extends: [`plugin:testing-library/${ruleset}`],
   rules: {
     // Not included in jest/recommended
     'testing-library/await-fire-event': 0,

@@ -44,11 +44,12 @@ const testRules = [
   'jest',
   ['jest', 'jest-async'],
   'jest-dom',
+  ['@testing-library/jest-dom', 'jest-dom'],
   'mocha',
   ['mocha', 'mocha-cleanup'],
   'qunit',
   ['grunt-contrib-qunit', 'qunit'],
-  'testing-library',
+  ['@testing-library/dom', 'testing-library'],
 ]
 
 depRules.forEach((depRule) => {
