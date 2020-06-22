@@ -1,4 +1,5 @@
 const { hasAnyDep } = require('./lib/utils')
+const isModuleAvailable = require('./lib/is-module-available')
 
 // Base rules
 const rules = [
@@ -32,26 +33,35 @@ const depRules = [
   'ramda',
   'react-redux',
   'redux-saga',
+]
 
-  // Test tools
+const testRules = [
   'ava',
   ['chai', 'chai-expect'],
   ['chai', 'chai-friendly'],
+  'cypress',
   'jasmine',
   'jest',
   ['jest', 'jest-async'],
+  'jest-dom',
   'mocha',
   ['mocha', 'mocha-cleanup'],
   'qunit',
   ['grunt-contrib-qunit', 'qunit'],
-  'cypress',
-  'prettier',
+  'testing-library',
 ]
 
 depRules.forEach((depRule) => {
   const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
   if (hasAnyDep(rule[0])) rules.push(rule[1])
 })
+
+testRules.forEach((depRule) => {
+  const rule = typeof depRule === 'string' ? [depRule, depRule] : depRule
+  if (isModuleAvailable(rule[0])) rules.push(rule[1])
+})
+
+if (hasAnyDep('prettier')) rules.push('prettier')
 
 // Extra required optional packages
 const extraInstallPackage = [['prettier', 'eslint-config-prettier']]
