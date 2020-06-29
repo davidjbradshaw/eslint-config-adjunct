@@ -9,5 +9,6 @@ module.exports = {
     'unicorn/no-null': 0,
     'unicorn/prefer-number-properties': 0,
     'unicorn/prefer-optional-catch-binding': 0,
+    'unicorn/prevent-abbreviations': 0,
   },
 }

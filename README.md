@@ -27,12 +27,11 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 ```json
 {
   "scripts": {
-    "eslint": "eslint --color *.{html,js,json,jsx,md} src/*.{html,js,json,jsx,md}",
+    "eslint": "eslint --color --ext .html,.js,.json,.jsx,.md *.* src",
     "eslint:fix": "npm run eslint -- --fix"
   }
 }
 ```
-__* Delete filetypes as required__
 
 ## Install Dependencies
 
@@ -78,7 +77,7 @@ If prettier is installed, any rules that may conflict with Prettier will be disa
 
 The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
 
-### Security 
+### Security
 
 These plugins add code security rules to esLint.
 
@@ -151,6 +150,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - unicorn/no-null
 - unicorn/prefer-number-properties
 - unicorn/prefer-optional-catch-binding
+- unicorn/prevent-abbreviations
 
 The following rules are disabled due to clashing with other plugins
 
