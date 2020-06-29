@@ -11,8 +11,8 @@
   "main": "index.js",
   "scripts": {
     "ci-test": "npm run test",
-    "eslint": "eslint --color  *.{js,json,md} rules/**.js lib/**.js docs/**.md",
-    "eslint:fix": "eslint --color --fix  *.{js,md} rules/**.js lib/**.js docs/**.md",
+    "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
+    "eslint:fix": "npm run eslint --fix",
     "prepublishOnly": "eslint-find-rules --unused --no-core",
     "test": "npm run eslint && npm run prepublishOnly",
     "snyk-protect": "snyk protect",
