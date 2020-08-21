@@ -24,6 +24,7 @@ module.exports = {
     'jest/no-expect-resolves': 0,
     'jest/no-hooks': 0,
     'jest/no-if': 0,
+    'jest/no-interpolation-in-snapshots': 0,
     'jest/no-large-snapshots': 0,
     'jest/no-restricted-matchers': 0,
     'jest/no-test-return-statement': 0,

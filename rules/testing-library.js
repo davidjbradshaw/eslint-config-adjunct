@@ -27,6 +27,7 @@ module.exports = {
     'testing-library/no-debug': 0,
     'testing-library/no-dom-import': 0,
     'testing-library/no-manual-cleanup': 0,
+    'testing-library/no-render-in-setup': 0,
     'testing-library/no-wait-for-empty-callback': 0,
     'testing-library/prefer-explicit-assert': 0,
     'testing-library/prefer-presence-queries': 0,
