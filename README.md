@@ -39,23 +39,22 @@ After you have configured `eslint` to include this package, the first time you r
 
 ## Plugins
 
-### Base Plugins
+### Code Quality
 
-The following esLint plugins are always loaded in this configuration:
+These two plugins provide a range of code quality rules:
 
-- [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
-- [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+
+### Langauges
+
+The following plugins expand esLint to work with json files, and lint JavaScript contiained in HTML and MarkDown:
+
 - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
 - [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
-- [eslint-plugin-json-format](https://github.com/Bkucera/eslint-plugin-json-format)
 - [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
-- [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
-- [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
-- [eslint-plugin-optimize-regex](https://github.com/BrainMaestro/eslint-plugin-optimize-regex)
-- [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
-- [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
-- [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
-- [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+
+_When linting code snippets in Markdown files, a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/markdown.js#L3) relating to globals and unused vars are disabled._
 
 ### Library Plugins
 
@@ -68,6 +67,19 @@ These plugins will be loaded in based on your project `dependencies` in `package
 - [eslint-plugin-react-redux](https://github.com/DianaSuvorova/eslint-plugin-react-redux#readme)
 - [eslint-plugin-redux-saga](https://github.com/pke/eslint-plugin-redux-saga)
 
+### Practices
+
+The following esLint plugins enforce good coding practices:
+
+- [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
+- [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
+- [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
+- [eslint-plugin-no-use-extend-native](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)
+- [eslint-plugin-optimize-regex](https://github.com/BrainMaestro/eslint-plugin-optimize-regex)
+- [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
+- [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
+- [eslint-plugin-switch-case](https://github.com/lukeapage/eslint-plugin-switch-case)
+
 ### Prettier
 
 If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your project's root.
@@ -79,13 +91,12 @@ The prettier configs for different eslint plugins are also automatically include
 
 ### Security
 
-These plugins add code security rules to esLint.
+These plugins add code security rules to esLint:
 
 - [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
 - [eslint-plugin-no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
 - [eslint-plugin-scanjs-rules](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
-- [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 
 ### Test Libraries
 
@@ -102,17 +113,11 @@ Test plugins are loaded based on which testing tools you have listed in `devDepe
 - [eslint-plugin-qunit](https://github.com/platinumazure/eslint-plugin-qunit)
 - [eslint-plugin-cypress](https://github.com/cypress-io/eslint-plugin-cypress)
 
+_For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test code styles._
+
 ## Rules
 
 In the most part the default rules are used for the plugins listed above, with the following exceptions.
-
-### Markdown
-
-When linting code snippets in Markdown files, a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/markdown.js#L3) relating to globals and unused vars are disabled.
-
-### Tests
-
-For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test code styles.
 
 ### Switch-Case
 
