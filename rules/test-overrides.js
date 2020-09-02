@@ -1,14 +1,20 @@
 // eslint-disable-next-line no-console
-console.log(' ')
+console.log('  eslint-test-overrides\n')
 
 module.exports = {
   overrides: [
     {
       files: [
-        '**/*.spec.{j,t}s',
-        '**/*.test.{j,t}s',
-        '**/test/**',
+        '*.spec.js',
+        '*.spec.ts',
+        '*.spec.jsx',
+        '*.spec.tsx',
+        '*.test.js',
+        '*.test.ts',
+        '*.test.jsx',
+        '*.test.tsx',
         '**/tests/**',
+        '**/test/**',
         '**/__test__/**',
         '**/__tests__/**',
       ],

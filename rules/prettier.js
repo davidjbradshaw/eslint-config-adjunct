@@ -23,7 +23,7 @@ optionalConfigs.forEach((optConfig) => {
 
 if (!global.hasAdjunctPrettierLoaded) {
   // eslint-disable-next-line no-console
-  console.log(configs.map((config) => `  eslint-config-${config}\n`).join(''))
+  console.log(configs.map((config) => `  eslint-config-${config}`).join('\n'))
   global.hasAdjunctPrettierLoaded = true
 }
 
