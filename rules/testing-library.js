@@ -29,6 +29,7 @@ module.exports = {
     'testing-library/no-manual-cleanup': 0,
     'testing-library/no-render-in-setup': 0,
     'testing-library/no-wait-for-empty-callback': 0,
+    'testing-library/no-wait-for-snapshot': 0,
     'testing-library/prefer-explicit-assert': 0,
     'testing-library/prefer-presence-queries': 0,
     'testing-library/prefer-screen-queries': 0,

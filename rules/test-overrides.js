@@ -7,8 +7,8 @@ module.exports = {
       files: [
         '**/*.spec.{j,t}s',
         '**/*.test.{j,t}s',
-        '**/tests/**',
         '**/test/**',
+        '**/tests/**',
         '**/__test__/**',
         '**/__tests__/**',
       ],
@@ -21,6 +21,7 @@ module.exports = {
         'max-statements': 'off',
         'promise/always-return': 'off',
         'promise/no-callback-in-promise': 'off',
+        'security/detect-non-literal-regexp': 'off',
         'sonarjs/no-duplicate-string': 'off',
         'sonarjs/no-identical-functions': 'off',
       },
