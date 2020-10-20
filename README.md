@@ -34,7 +34,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 ```
 
 If you do not want to log the packages, you can silence it by adding `NO_LOGS=true` before the `eslint` command.
-```js
+```
 {
   "scripts": {
     "eslint": "NO_LOGS=true eslint .",

@@ -1,4 +1,4 @@
-require('eslint-config-adjunct/lib/loggers').consoleLog('  eslint-test-overrides\n')
+require('../lib/loggers').consoleLog('  eslint-test-overrides\n')
 
 module.exports = {
   overrides: [

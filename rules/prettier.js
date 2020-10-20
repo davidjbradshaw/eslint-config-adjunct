@@ -1,5 +1,5 @@
-const { hasAnyDep } = require('eslint-config-adjunct/lib/utils')
-const { consoleConfig } = require('eslint-config-adjunct/lib/loggers')
+const { hasAnyDep } = require('../lib/utils')
+const { consoleConfig } = require('../lib/loggers')
 
 const configs = ['prettier']
 

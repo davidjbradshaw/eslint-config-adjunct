@@ -1,5 +1,5 @@
-const isModuleAvailable = require('eslint-config-adjunct/lib/is-module-available')
-const { consoleLog } = require('eslint-config-adjunct/lib/loggers')
+const isModuleAvailable = require('../lib/is-module-available')
+const { consoleLog } = require('../lib/loggers')
 
 let ruleset = ''
 
