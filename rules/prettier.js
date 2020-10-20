@@ -1,4 +1,5 @@
-const { hasAnyDep } = require('../lib/utils')
+const { hasAnyDep } = require('eslint-config-adjunct/lib/utils')
+const { consoleConfig } = require('eslint-config-adjunct/lib/loggers')
 
 const configs = ['prettier']
 
@@ -22,8 +23,7 @@ optionalConfigs.forEach((optConfig) => {
 })
 
 if (!global.hasAdjunctPrettierLoaded) {
-  // eslint-disable-next-line no-console
-  console.log(configs.map((config) => `  eslint-config-${config}`).join('\n'))
+  configs.map(consoleConfig)
   global.hasAdjunctPrettierLoaded = true
 }
 

@@ -1,4 +1,5 @@
-const isModuleAvailable = require('../lib/is-module-available')
+const isModuleAvailable = require('eslint-config-adjunct/lib/is-module-available')
+const { consoleLog } = require('eslint-config-adjunct/lib/loggers')
 
 let ruleset = ''
 
@@ -15,8 +16,7 @@ switch (true) {
     ruleset = 'recommended'
 }
 
-// eslint-disable-next-line no-console
-console.log(`  eslint-plugin-testing-library/${ruleset}`)
+consoleLog(`  eslint-plugin-testing-library/${ruleset}`)
 
 module.exports = {
   extends: [`plugin:testing-library/${ruleset}`],

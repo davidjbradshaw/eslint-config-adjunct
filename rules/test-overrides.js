@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-console
-console.log('  eslint-test-overrides\n')
+require('eslint-config-adjunct/lib/loggers').consoleLog('  eslint-test-overrides\n')
 
 module.exports = {
   overrides: [
