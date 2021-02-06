@@ -160,6 +160,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - lodash/prefer over native rules
 - lodash-fp/use-fp
 - unicorn/no-fn-reference-in-iterator
+- unicorn/no-array-for-each
 - unicorn/no-reduce
 - unicorn/no-null
 - unicorn/prefer-number-properties
