@@ -23,7 +23,7 @@ optionalConfigs.forEach((optConfig) => {
 })
 
 if (!global.hasAdjunctPrettierLoaded) {
-  configs.map(consoleConfig)
+  configs.map((config) => consoleConfig(config))
   global.hasAdjunctPrettierLoaded = true
 }
 
