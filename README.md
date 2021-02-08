@@ -176,5 +176,4 @@ The following rules are disabled due to clashing with other plugins
 
 ## License
 
-Copyright &copy; 2019-20 [David J. Bradshaw](https://github.com/davidjbradshaw).
-Licensed under the [MIT License](LICENSE).
+Copyright &copy; 2019-20 [David J. Bradshaw](https://github.com/davidjbradshaw) - Licensed under the [MIT License](LICENSE)
