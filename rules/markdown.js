@@ -3,11 +3,10 @@ module.exports = {
   overrides: [
     {
       files: ['*.md', '**/*.md'],
-      parserOptions: {
-        ecmacFeatures: {
-          impliedStrict: true,
-        },
-      },
+      processor: 'markdown/markdown',
+    },
+    {
+      files: ['*.md/*.js', '**/*.md/*.js'],
       rules: {
         'global-require': 'off',
         'import/no-unresolved': 'off',

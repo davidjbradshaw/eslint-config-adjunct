@@ -1,7 +1,6 @@
 ## TypeScript
 
-All of the packages in *eslint-config-adjuct* should work with TypeScript. The following is an example config using the AirBnB ruleset with Adjunct and TypeScript-Eslint.
-
+All of the packages in _eslint-config-adjuct_ should work with TypeScript. The following is an example config using the AirBnB ruleset with Adjunct and TypeScript-Eslint.
 
 ```json
 {
@@ -10,10 +9,10 @@ All of the packages in *eslint-config-adjuct* should work with TypeScript. The f
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "airbnb-typescript",
     "airbnb/hooks",
-    "adjunct",
+    "adjunct"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
-  },
+  }
 }
 ```

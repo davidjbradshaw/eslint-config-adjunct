@@ -34,6 +34,7 @@ You can now include `html`, `json` and `markdown` in the list of files passed to
 ```
 
 If you do not want to log the packages, you can silence it by adding `NO_LOGS=true` before the `eslint` command.
+
 ```
 {
   "scripts": {
@@ -94,7 +95,6 @@ The following esLint plugins enforce good coding practices:
 If prettier is installed, any rules that may conflict with Prettier will be disabled. The plugin should read you Prettier config from your project's root.
 
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 
 The prettier configs for different eslint plugins are also automatically included based on which eslint plugins have been installed into your project.
 
@@ -159,6 +159,7 @@ The following rules are disabled due to them being considered unduly restrictive
 - redux-saga/no-unhandled-errors
 - lodash/prefer over native rules
 - lodash-fp/use-fp
+- unicorn/no-array-for-each
 - unicorn/no-fn-reference-in-iterator
 - unicorn/no-reduce
 - unicorn/no-null
@@ -174,5 +175,5 @@ The following rules are disabled due to clashing with other plugins
 
 ## License
 
-Copyright &copy; 2019-20 [David J. Bradshaw](https://github.com/davidjbradshaw).
+Copyright &copy; 2019-21 [David J. Bradshaw](https://github.com/davidjbradshaw).
 Licensed under the [MIT License](LICENSE).
