@@ -1,5 +1,6 @@
 const { hasAnyDep } = require('../lib/utils')
 const { consoleConfig } = require('../lib/loggers')
+const isModuleAvailable = require('../lib/is-module-available')
 
 const configs = ['prettier']
 
@@ -19,26 +20,27 @@ optionalConfigs.forEach((optConfig) => {
       ? [`eslint-plugin-${optConfig}`, `prettier/${optConfig}`]
       : optConfig
 
-  if (hasAnyDep(config[0])) configs.push(config[1])
+  if (hasAnyDep(config[0]) && isModuleAvailable(config[1]))
+    configs.push(config[1])
 })
 
 if (!global.hasAdjunctPrettierLoaded) {
-  configs.map(consoleConfig)
+  configs.map((config) => consoleConfig(config))
   global.hasAdjunctPrettierLoaded = true
 }
 
 module.exports = {
   extends: configs,
-  plugins: ['prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
-  overrides: [
-    {
-      files: ['**.md', '**.json'],
-      rules: {
-        'prettier/prettier': 'off',
-      },
-    },
-  ],
+  // plugins: ['prettier'],
+  // rules: {
+  //   'prettier/prettier': 'error',
+  // },
+  // overrides: [
+  //   {
+  //     files: ['**.md', '**.json'],
+  //     rules: {
+  //       'prettier/prettier': 'off',
+  //     },
+  //   },
+  // ],
 }
