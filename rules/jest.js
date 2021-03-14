@@ -38,6 +38,7 @@ module.exports = {
     'jest/prefer-todo': 0,
     'jest/require-to-throw-message': 0,
     'jest/require-top-level-describe': 0,
+    'jest/unbound-method': 0,
     'jest/valid-title': 0,
   },
 }
