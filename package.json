@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-adjunct",
-  "version": "4.8.11",
+  "version": "4.9.0",
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
@@ -14,9 +14,7 @@
     "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
     "eslint:fix": "npm run eslint --fix",
     "prepublishOnly": "eslint-find-rules --unused --no-core",
-    "test": "npm run eslint && npm run prepublishOnly",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test": "npm run eslint && npm run prepublishOnly"
   },
   "keywords": [
     "airbnb",
@@ -106,5 +104,5 @@
   "engines": {
     "node": ">= 6.5"
   },
-  "snyk": true
+  "snyk": false
 }
