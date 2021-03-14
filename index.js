@@ -7,8 +7,10 @@ if (!global.hasAdjunctLoaded) {
   checkMissing(rules, extraInstallPackage)
   showLoaded(rules, [])
 
+  rules.push('prettier')
+
   // Disable some rules in unit tests
-  rules.push('test-overrides')
+  rules.push('test-overrides') // eslint-disable-line unicorn/no-array-push-push
   global.hasAdjunctLoaded = true
 }
 
