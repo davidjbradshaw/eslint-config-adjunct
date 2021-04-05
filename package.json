@@ -32,10 +32,10 @@
     "mkdirp": "^1.0.4",
     "ramda": "^0.27.1",
     "read-pkg-up": "^8.0.0",
-    "rimraf": "^3.0.2",
-    "snyk": "^1.486.0"
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
+    "snyk": "^1.486.0",
     "@testing-library/dom": "^7.30.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
