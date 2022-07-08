@@ -13,7 +13,7 @@
     "ci-test": "npm run test",
     "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
     "eslint:fix": "npm run eslint --fix",
-    "prepublishOnly": "eslint-find-rules --unused --no-core",
+    "prepublishOnly": "eslint-find-rules --no-core",
     "test": "npm run eslint && npm run prepublishOnly"
   },
   "keywords": [
