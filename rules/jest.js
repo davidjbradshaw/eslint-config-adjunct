@@ -23,7 +23,7 @@ module.exports = {
     'jest/no-duplicate-hooks': 0,
     'jest/no-expect-resolves': 0,
     'jest/no-hooks': 0,
-    'jest/no-if': 0,
+    // 'jest/no-if': 0, deprecaded
     'jest/no-interpolation-in-snapshots': 0,
     'jest/no-large-snapshots': 0,
     'jest/no-restricted-matchers': 0,
