@@ -1,6 +1,9 @@
-# eslint-config-adjunct
+<div align="center">
+  <img src="https://eslint.org/icon.svg" width="160" alt="">
 
-> _A reasonable collection of *plugins* to use alongside your main esLint configuration_
+# eslint-config-adjunct
+_A reasonable collection of *plugins* to use alongside your main esLint configuration_
+</div>
 
 This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time-consuming to setup and provides an easy way to install just the plugins you need, based on your project's dependencies.
 
@@ -71,6 +74,7 @@ These plugins will be loaded in based on your project `dependencies` in `package
 
 The following esLint plugins enforce good coding practices:
 
+- [eslint-plugin-const-case](https://github.com/k03mad/eslint-plugin-const-case#readme)
 - [eslint-plugin-array-func](https://github.com/freaktechnik/eslint-plugin-array-func)
 - [eslint-plugin-eslint-comments](https://github.com/mysticatea/eslint-plugin-eslint-comments)
 - [eslint-plugin-no-constructor-bind](https://github.com/markalfred/eslint-plugin-no-constructor-bind)
@@ -94,8 +98,10 @@ These plugins add code security rules to esLint:
 
 - [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
 - [eslint-plugin-no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
+- [eslint-plugin-pii](https://github.com/shiva-hack/eslint-plugin-pii)
 - [eslint-plugin-scanjs-rules](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
+- [eslint-plugin-](https://github.com/Rantanen/eslint-plugin-xss)
 
 ### Test Libraries
 

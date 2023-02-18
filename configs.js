@@ -4,6 +4,7 @@ const isModuleAvailable = require('./lib/is-module-available')
 // Base rules
 const rules = [
   'array-func',
+  'const-case',
   'eslint-comments',
   'html',
   'json',
@@ -14,15 +15,17 @@ const rules = [
   'optimize-regex',
   'promise',
   'simple-import-sort',
+  'sonarjs',
   'switch-case',
   'unicorn',
 
   // Security Rules
   'no-secrets',
   'no-unsanitized',
+  'pii',
   'scanjs-rules',
   'security',
-  'sonarjs',
+  'xss',
 ]
 
 // Optionals rules besed on project dependencies
