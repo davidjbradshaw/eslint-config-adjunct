@@ -31,16 +31,16 @@ if (!global.hasAdjunctPrettierLoaded) {
 
 module.exports = {
   extends: configs,
-  // plugins: ['prettier'],
-  // rules: {
-  //   'prettier/prettier': 'error',
-  // },
-  // overrides: [
-  //   {
-  //     files: ['**.md', '**.json'],
-  //     rules: {
-  //       'prettier/prettier': 'off',
-  //     },
-  //   },
-  // ],
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+  },
+  overrides: [
+    {
+      files: ['**.md', '**.json'],
+      rules: {
+        'prettier/prettier': 'off',
+      },
+    },
+  ],
 }
