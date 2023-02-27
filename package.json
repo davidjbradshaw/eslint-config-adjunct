@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-adjunct",
-  "version": "4.12.1",
+  "version": "4.12.2",
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
@@ -14,6 +14,7 @@
     "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
     "eslint:fix": "npm run eslint --fix",
     "prepublishOnly": "eslint-find-rules -d --no-core",
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
     "test": "npm run eslint && npm run prepublishOnly"
   },
   "keywords": [
