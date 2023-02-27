@@ -1,8 +1,4 @@
 module.exports = {
-  'plugins': [
-      'const-case'
-  ],
-  'rules': {
-      'const-case/uppercase': 'error'
-  }
+  plugins: ['const-case'],
+  rules: { 'const-case/uppercase': 'error' },
 }

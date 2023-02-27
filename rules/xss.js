@@ -1,5 +1,3 @@
 module.exports = {
-  "extends": [
-      "plugin:xss/recommended"
-  ]
+  extends: ['plugin:xss/recommended'],
 }

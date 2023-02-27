@@ -7,6 +7,6 @@ module.exports = {
     'unicorn/prefer-number-properties': 0,
     'unicorn/prefer-optional-catch-binding': 0,
     'unicorn/prevent-abbreviations': 0,
-    "unicorn/switch-case-braces": ["error", "avoid"],
+    'unicorn/switch-case-braces': ['error', 'avoid'],
   },
 }
