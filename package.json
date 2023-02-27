@@ -4,6 +4,10 @@
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
+  "funding": {
+    "type" : "github",
+    "url" : "https://github.com/sponsors/davidjbradshaw"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/davidjbradshaw/eslint-config-adjunct.git"
