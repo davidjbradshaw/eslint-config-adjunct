@@ -23,7 +23,6 @@ const rules = [
   'no-secrets',
   'no-unsanitized',
   'pii',
-  'scanjs-rules',
   'security',
   'xss',
 ]
