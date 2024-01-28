@@ -101,7 +101,7 @@ These plugins add code security rules to esLint:
 - [eslint-plugin-pii](https://github.com/shiva-hack/eslint-plugin-pii)
 - [eslint-plugin-scanjs-rules](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
-- [eslint-plugin-](https://github.com/Rantanen/eslint-plugin-xss)
+- [eslint-plugin-xss](https://github.com/Rantanen/eslint-plugin-xss)
 
 ### Test Libraries
 
