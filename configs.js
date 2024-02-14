@@ -3,7 +3,7 @@ const isModuleAvailable = require('./lib/is-module-available')
 
 // Base rules
 const rules = [
-  'array-func',
+  // 'array-func',
   'const-case',
   'eslint-comments',
   'html',
@@ -15,7 +15,6 @@ const rules = [
   'optimize-regex',
   'promise',
   'simple-import-sort',
-  'sonarjs',
   'switch-case',
   'unicorn',
 
