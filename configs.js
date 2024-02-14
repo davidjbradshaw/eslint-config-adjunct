@@ -15,6 +15,7 @@ const rules = [
   'optimize-regex',
   'promise',
   'simple-import-sort',
+  'sonarjs',
   'switch-case',
   'unicorn',
 
