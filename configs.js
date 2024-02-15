@@ -3,7 +3,7 @@ const isModuleAvailable = require('./lib/is-module-available')
 
 // Base rules
 const rules = [
-  'array-func',
+  // 'array-func',
   'const-case',
   'eslint-comments',
   'html',
@@ -23,7 +23,6 @@ const rules = [
   'no-secrets',
   'no-unsanitized',
   'pii',
-  'scanjs-rules',
   'security',
   'xss',
 ]
@@ -65,7 +64,7 @@ testRules.forEach((depRule) => {
   if (isModuleAvailable(rule[0])) rules.push(rule[1])
 })
 
-// if (hasAnyDep('prettier')) rules.push('prettier')
+if (hasAnyDep('prettier')) rules.push('prettier')
 
 // Extra required optional packages
 const extraInstallPackage = [['prettier', 'eslint-config-prettier']]
