@@ -8,5 +8,11 @@ module.exports = {
         'sonarjs/no-duplicate-string': 'off',
       },
     },
+    {
+      files: ['**/*.md', '**/*.md/*.*'],
+      rules: {
+        'sonarjs/*': 'off',
+      },
+    },
   ],
 }

@@ -2,43 +2,66 @@
   <img src="https://eslint.org/icon.svg" width="160" alt="">
 
 # eslint-config-adjunct
-_A reasonable collection of *plugins* to use alongside your main esLint configuration_
+_A reasonable collection of plugins to use alongside your main ESLint configuration_
 </div>
 
-This config is designed to be used alongside any of the major esLint configs, such as [airbnb](https://github.com/airbnb/javascript), [standard](https://github.com/standard/eslint-config-standard) or [eslint:recommended](https://eslint.org/docs/rules/). It provides a range of useful plugins that are often too time-consuming to setup and provides an easy way to install just the plugins you need, based on your project's dependencies.
+This config is designed to be used alongside your main ESLint setup. It provides a range of useful plugins that are often time‑consuming to configure and offers an easy way to include just the plugins you need, based on your project's dependencies.
 
 ## Install
 
-To install this config, run the following command.
+Install with ESLint v9 (Flat Config):
 
 ```sh
-npm install eslint-config-adjunct --save-dev
+npm install -D eslint@^9 eslint-config-adjunct
 ```
 
 ## Configure
 
-Extend your `.eslintrc`, with `adjunct`, which should be the last item in the `extends` array. For example if your using `eslint-config-airbnb` as your main rule set, your `.eslintrc` should look like the following. For more advanced use cases see the example configurations for [TypeScript](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/typescript.md) and [Vue](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/docs/vue.md).
+ESLint v9 uses Flat Config (`eslint.config.js`). Import and spread `adjunct` as the last part of your config array. For example:
 
-```json
-{
-  "extends": ["airbnb", "adjunct"]
-}
+```js
+// eslint.config.js
+import adjunct from 'eslint-config-adjunct'
+
+export default [
+  // ...your base configs (framework/language/etc)
+  ...adjunct(), // keep this last so adjunct can apply its overrides
+]
 ```
 
-You can now include `html`, `json` and `markdown` in the list of files passed to `eslint` to lint any JavaScript contained.
+If you're migrating from shareable configs like `airbnb` or `standard` (which may still publish eslintrc-style configs), you can use the ESLint compatibility helper in your own config:
+
+```js
+// eslint.config.js
+import { FlatCompat } from '@eslint/eslintrc'
+import adjunct from 'eslint-config-adjunct'
+
+const compat = new FlatCompat({ baseDirectory: import.meta.dirname })
+
+export default [
+  // Convert old-style extends entries to Flat Config:
+  ...compat.extends('airbnb'),
+  // Your project rules
+  // ...
+  // Finally, bring in adjunct
+  ...adjunct(),
+]
+```
+
+You can include `html`, `json`, and `markdown` files in your lint targets to have embedded JavaScript linted as well.
 
 ```json
 {
   "scripts": {
-    "eslint": "eslint --color --ext .html,.js,.json,.jsx,.md *.* src",
-    "eslint:fix": "npm run eslint -- --fix"
+    "lint": "eslint --color --ext .html,.js,.json,.jsx,.md .",
+    "lint:fix": "npm run lint -- --fix"
   }
 }
 ```
 
 ## Install Dependencies
 
-After you have configured `eslint` to include this package, the first time you run `eslint` it will output the `npm` command to install the dependencies required for your project. Cut'n'paste this command into the console, and you are then ready to start linting.
+After you have configured ESLint to include this package, the first time you run ESLint it will output the `npm` command to install any missing dependencies required for your project. Copy and run that command and you're ready to lint.
 
 ## Plugins
 
@@ -49,13 +72,13 @@ These two plugins provide a range of code quality rules:
 - [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 
-### Langauges
+### Languages
 
-The following plugins expand esLint to work with json files, and lint JavaScript contiained in HTML and MarkDown:
+The following plugins expand ESLint to work with JSON files, and lint JavaScript contained in HTML and Markdown:
 
 - [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html)
 - [eslint-plugin-json](https://github.com/azeemba/eslint-plugin-json)
-- [eslint-plugin-markdown](https://github.com/eslint/eslint-plugin-markdown)
+- [@eslint/markdown](https://github.com/eslint/markdown)
 
 _When linting code snippets in Markdown files, a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/markdown.js#L3) relating to globals and unused vars are disabled._
 
@@ -94,13 +117,14 @@ The prettier configs for different eslint plugins are also automatically include
 
 ### Security
 
-These plugins add code security rules to esLint:
+These plugins add code security rules to ESLint:
 
 - [eslint-plugin-no-secrets](https://github.com/nickdeis/eslint-plugin-no-secrets)
 - [eslint-plugin-no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
 - [eslint-plugin-pii](https://github.com/shiva-hack/eslint-plugin-pii)
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
-- [eslint-plugin-xss](https://github.com/Rantanen/eslint-plugin-xss)
+  
+Note: `eslint-plugin-xss` has been removed due to incompatibility with ESLint v9.
 
 ### Test Libraries
 
@@ -118,7 +142,7 @@ Test plugins are loaded based on which testing tools you have listed in `devDepe
 - [eslint-plugin-qunit](https://github.com/platinumazure/eslint-plugin-qunit)
 - [eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library)
 
-_For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better to support normal unit test code styles._
+_For test files a few [rules](https://github.com/davidjbradshaw/eslint-config-adjunct/blob/master/rules/test-overrides.js) are turned off, to better support normal unit test code styles._
 
 ## Rules
 

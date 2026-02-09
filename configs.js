@@ -9,13 +9,13 @@ const rules = [
   'html',
   'json',
   // 'json-format',
-  'markdown',
   'no-constructor-bind',
   'no-use-extend-native',
   'optimize-regex',
   'promise',
   'simple-import-sort',
   'sonarjs',
+  'markdown',
   'switch-case',
   'unicorn',
 
@@ -24,7 +24,7 @@ const rules = [
   'no-unsanitized',
   'pii',
   'security',
-  'xss',
+  // 'xss', // Removed: incompatible with ESLint v9 flat config
 ]
 
 // Optionals rules besed on project dependencies
