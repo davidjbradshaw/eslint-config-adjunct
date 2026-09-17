@@ -3,12 +3,10 @@ import { hasAnyDep } from './lib/utils.js'
 
 // Base rules
 export const rules = [
-  // 'array-func',
   'const-case',
   'eslint-comments',
   'html',
   'json',
-  // 'json-format',
   'no-constructor-bind',
   'no-use-extend-native',
   'optimize-regex',
@@ -24,7 +22,6 @@ export const rules = [
   'no-unsanitized',
   'pii',
   'security',
-  // 'xss', // Removed: incompatible with ESLint v9 flat config
 ]
 
 // Optionals rules besed on project dependencies

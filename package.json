@@ -15,10 +15,16 @@
   },
   "main": "index.js",
   "exports": "./index.js",
+  "files": [
+    "index.js",
+    "configs.js",
+    "lib",
+    "rules"
+  ],
   "scripts": {
     "ci-test": "npm run test",
-    "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
-    "eslint:fix": "npm run eslint --fix",
+    "eslint": "eslint --color .",
+    "eslint:fix": "eslint --color --fix .",
     "prepublishOnly": "npm run test",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
     "test": "npm run eslint"
@@ -244,7 +250,6 @@
     "eslint-plugin-switch-case": "^3.0.1",
     "eslint-plugin-testing-library": "^7.15.4",
     "eslint-plugin-unicorn": "^62.0.0",
-    "eslint-plugin-xss": "^0.1.12",
     "husky": "^9.1.7",
     "in-publish": "^2.0.1",
     "jasmine": "^6.0.0",
