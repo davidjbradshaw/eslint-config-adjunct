@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:react-redux/recommended'],
   plugins: ['react-redux'],
   rules: {

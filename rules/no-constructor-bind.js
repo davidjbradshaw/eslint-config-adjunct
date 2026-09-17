@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['no-constructor-bind'],
   rules: {
     'no-constructor-bind/no-constructor-bind': 'error',

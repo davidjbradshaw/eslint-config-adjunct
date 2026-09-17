@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['array-func'],
   // extends: ['plugin:array-func/recommended'],
   rules: {

@@ -1,9 +1,10 @@
-const markdownMod = require('@eslint/markdown')
-const markdown = markdownMod && markdownMod.configs ? markdownMod : markdownMod.default
+import markdown from '@eslint/markdown'
 
-module.exports = [
+const markdownConfigs = markdown?.configs || markdown
+
+export default [
   // Use the official flat config for Markdown
-  markdown.configs.recommended,
+  markdownConfigs.recommended,
 
   // Relax certain rules inside fenced code blocks
   {

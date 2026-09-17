@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['simple-import-sort'],
   rules: {
     'simple-import-sort/imports': 'error',

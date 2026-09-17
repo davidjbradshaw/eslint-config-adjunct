@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['json-format'],
   settings: {
     'json/sort-package-json': [

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:mocha-cleanup/recommended-no-limits'],
   plugins: ['mocha-cleanup'],
   rules: {

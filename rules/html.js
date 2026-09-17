@@ -1,3 +1,6 @@
-module.exports = {
-  plugins: ['html'],
-}
+export default [
+  {
+    files: ['**/*.html'],
+    processor: 'html/html',
+  },
+]

@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-adjunct",
   "version": "5.0.0",
-  "type": "commonjs",
+  "type": "module",
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
@@ -14,6 +14,7 @@
     "url": "https://github.com/davidjbradshaw/eslint-config-adjunct.git"
   },
   "main": "index.js",
+  "exports": "./index.js",
   "scripts": {
     "ci-test": "npm run test",
     "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
@@ -111,7 +112,7 @@
     "testing-library": "0.0.2"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20.19"
   },
   "snyk": false
 }

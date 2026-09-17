@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:redux-saga/recommended'],
   plugins: ['redux-saga'],
   rules: {

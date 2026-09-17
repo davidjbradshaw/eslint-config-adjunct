@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['no-unsanitized'],
   rules: {
     'no-unsanitized/method': 'error',

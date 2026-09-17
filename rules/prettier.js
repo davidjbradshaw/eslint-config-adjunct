@@ -1,6 +1,6 @@
-const { hasAnyDep } = require('../lib/utils')
-const { consoleConfig } = require('../lib/loggers')
-const isModuleAvailable = require('../lib/is-module-available')
+import isModuleAvailable from '../lib/is-module-available.js'
+import { consoleConfig } from '../lib/loggers.js'
+import { hasAnyDep } from '../lib/utils.js'
 
 const configs = ['prettier']
 
@@ -24,12 +24,12 @@ optionalConfigs.forEach((optConfig) => {
     configs.push(config[1])
 })
 
-if (!global.hasAdjunctPrettierLoaded) {
+if (!globalThis.hasAdjunctPrettierLoaded) {
   configs.map((config) => consoleConfig(config))
-  global.hasAdjunctPrettierLoaded = true
+  globalThis.hasAdjunctPrettierLoaded = true
 }
 
-module.exports = {
+export default {
   extends: configs,
   plugins: ['prettier'],
   rules: {

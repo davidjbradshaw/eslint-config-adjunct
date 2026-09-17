@@ -1,11 +1,6 @@
-const jsonPlugin = require('eslint-plugin-json')
-
-const preset =
-  (jsonPlugin && jsonPlugin.configs && (jsonPlugin.configs['recommended-with-comments'] || jsonPlugin.configs.recommended)) || {}
-
-module.exports = [
-  // Bring in the JSON plugin's flat config preset directly if available
-  preset,
+export default [
+  // Use the plugin's recommended preset via extends for flat conversion
+  { extends: ['plugin:json/recommended'] },
 
   // Project-specific tweaks for JSON files
   {

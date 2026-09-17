@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:switch-case/recommended'],
   plugins: ['switch-case'],
   rules: {

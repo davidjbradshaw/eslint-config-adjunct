@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:eslint-comments/recommended'],
   plugins: ['eslint-comments'],
   rules: {

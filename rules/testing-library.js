@@ -1,5 +1,5 @@
-const isModuleAvailable = require('../lib/is-module-available')
-const { consoleLog } = require('../lib/loggers')
+import isModuleAvailable from '../lib/is-module-available.js'
+import { consoleLog } from '../lib/loggers.js'
 
 let ruleset = ''
 
@@ -18,7 +18,7 @@ switch (true) {
 
 consoleLog(`  eslint-plugin-testing-library/${ruleset}`)
 
-module.exports = {
+export default {
   extends: [`plugin:testing-library/${ruleset}`],
   rules: {
     // Not included in jest/recommended
