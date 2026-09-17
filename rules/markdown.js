@@ -3,12 +3,16 @@ import markdown from '@eslint/markdown'
 const markdownConfigs = markdown?.configs || markdown
 
 export default [
-  // Use the official flat config for Markdown
-  markdownConfigs.recommended,
+  // Lint Markdown syntax with the official recommended config
+  ...markdownConfigs.recommended,
+  // Extract fenced code blocks so the code inside them is linted as well
+  ...markdownConfigs.processor,
 
-  // Relax certain rules inside fenced code blocks
+  // Relax certain rules inside fenced JavaScript/TypeScript code blocks.
+  // Only JS-family blocks are matched, otherwise ESLint would run the
+  // JavaScript parser over sh/yaml/etc. snippets.
   {
-    files: ['**/*.md/*.*'],
+    files: ['**/*.md/*.{js,jsx,mjs,cjs,ts,tsx}'],
     rules: {
       'global-require': 'off',
       'import/no-unresolved': 'off',

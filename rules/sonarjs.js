@@ -16,7 +16,7 @@ export default [
   },
   // Do not run SonarJS on Markdown documents, code blocks within them, or JSON
   {
-    files: ['**/*.md', '**/*.md/*.*', '**/*.json'],
+    files: ['**/*.md', '**/*.md/*.{js,jsx,mjs,cjs,ts,tsx}', '**/*.json'],
     rules: allSonarRulesOff,
   },
 ]

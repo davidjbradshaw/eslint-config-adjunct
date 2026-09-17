@@ -6,8 +6,8 @@ All of the packages in eslint-config-adjunct work fine with TypeScript. Below ar
 
 ```js
 // eslint.config.js
-import tseslint from 'typescript-eslint'
 import adjunct from 'eslint-config-adjunct'
+import tseslint from 'typescript-eslint'
 
 export default [
   // Recommended TypeScript rules
