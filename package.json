@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-adjunct",
-  "version": "4.13.0",
-  "type": "commonjs",
+  "version": "5.0.0",
+  "type": "module",
   "author": "David J. Bradshaw",
   "license": "MIT",
   "description": "A reasonable collection of plugins to use alongside your main esLint configuration",
@@ -14,13 +14,20 @@
     "url": "https://github.com/davidjbradshaw/eslint-config-adjunct.git"
   },
   "main": "index.js",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "configs.js",
+    "lib",
+    "rules"
+  ],
   "scripts": {
     "ci-test": "npm run test",
-    "eslint": "eslint --color  --ext .html,js,json,jsx,md *.* rules lib docs",
-    "eslint:fix": "npm run eslint --fix",
+    "eslint": "eslint --color .",
+    "eslint:fix": "eslint --color --fix .",
     "prepublishOnly": "npm run test",
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
-    "test": "npm run eslint && eslint-find-rules -d --no-core"
+    "test": "npm run eslint"
   },
   "keywords": [
     "airbnb",
@@ -32,87 +39,238 @@
     "styleguide"
   ],
   "dependencies": {
-    "@eslint/eslintrc": "^3.0.1",
+    "@eslint/eslintrc": "^3.3.3",
     "arrify": "^2.0.1",
     "cosmiconfig": "^9.0.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "mkdirp": "^3.0.1",
     "path": "^0.12.7",
-    "ramda": "^0.29.1",
+    "ramda": "^0.32.0",
     "read-pkg-up": "7.0.1",
-    "rimraf": "^5.0.5",
-    "url": "^0.11.3"
+    "rimraf": "^6.1.2",
+    "url": "^0.11.4"
   },
-  "devDependencies": {
-    "@testing-library/dom": "^9.3.4",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "ava": "^6.1.1",
-    "babel-eslint": "^10.1.0",
-    "chai": "^5.1.0",
-    "cypress": "^13.6.4",
-    "eslint": "^8.56.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-find-rules": "^4.1.0",
-    "eslint-plugin-ava": "^14.0.0",
-    "eslint-plugin-chai-expect": "^3.0.0",
-    "eslint-plugin-chai-friendly": "^0.7.4",
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "@eslint/markdown": "^7.5.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-ava": "^15.1.0",
+    "eslint-plugin-chai-expect": "^3.1.0",
+    "eslint-plugin-chai-friendly": "^1.1.0",
     "eslint-plugin-const-case": "^1.2.2",
-    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-cypress": "^5.2.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-fsa": "^1.0.12",
-    "eslint-plugin-html": "^8.0.0",
-    "eslint-plugin-jasmine": "^4.1.3",
-    "eslint-plugin-jest": "^27.8.0",
+    "eslint-plugin-html": "^8.1.4",
+    "eslint-plugin-jasmine": "^4.2.2",
+    "eslint-plugin-jest": "^29.13.0",
     "eslint-plugin-jest-async": "^1.0.3",
-    "eslint-plugin-jest-dom": "^5.1.0",
-    "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-json": "^4.0.1",
+    "eslint-plugin-lodash": "^8.0.0",
     "eslint-plugin-lodash-fp": "^2.2.0-a1",
-    "eslint-plugin-markdown": "^3.0.1",
-    "eslint-plugin-mocha": "^10.2.0",
+    "eslint-plugin-mocha": "^11.2.0",
     "eslint-plugin-mocha-cleanup": "^1.11.3",
     "eslint-plugin-no-constructor-bind": "^2.0.4",
-    "eslint-plugin-no-secrets": "^0.8.9",
-    "eslint-plugin-no-unsanitized": "^4.0.2",
-    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-no-secrets": "^2.2.1",
+    "eslint-plugin-no-unsanitized": "^4.1.4",
+    "eslint-plugin-no-use-extend-native": "^0.7.2",
     "eslint-plugin-optimize-regex": "^1.2.1",
     "eslint-plugin-pii": "^1.0.2",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-qunit": "^8.1.1",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-qunit": "^8.2.6",
     "eslint-plugin-ramda": "^2.5.1",
-    "eslint-plugin-react-redux": "^4.1.0",
+    "eslint-plugin-react-redux": "^4.2.2",
     "eslint-plugin-redux-saga": "^1.3.2",
-    "eslint-plugin-security": "^2.1.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0",
-    "eslint-plugin-sonarjs": "^0.24.0",
-    "eslint-plugin-switch-case": "^1.1.2",
-    "eslint-plugin-testing-library": "^6.2.0",
-    "eslint-plugin-unicorn": "^51.0.1",
-    "eslint-plugin-xss": "^0.1.12",
-    "husky": "^9.0.11",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.6",
+    "eslint-plugin-switch-case": "^3.0.1",
+    "eslint-plugin-testing-library": "^7.15.4",
+    "eslint-plugin-unicorn": "^62.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@eslint/markdown": {
+      "optional": true
+    },
+    "eslint-config-prettier": {
+      "optional": true
+    },
+    "eslint-plugin-ava": {
+      "optional": true
+    },
+    "eslint-plugin-chai-expect": {
+      "optional": true
+    },
+    "eslint-plugin-chai-friendly": {
+      "optional": true
+    },
+    "eslint-plugin-const-case": {
+      "optional": true
+    },
+    "eslint-plugin-cypress": {
+      "optional": true
+    },
+    "eslint-plugin-eslint-comments": {
+      "optional": true
+    },
+    "eslint-plugin-fsa": {
+      "optional": true
+    },
+    "eslint-plugin-html": {
+      "optional": true
+    },
+    "eslint-plugin-jasmine": {
+      "optional": true
+    },
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-jest-async": {
+      "optional": true
+    },
+    "eslint-plugin-jest-dom": {
+      "optional": true
+    },
+    "eslint-plugin-json": {
+      "optional": true
+    },
+    "eslint-plugin-lodash": {
+      "optional": true
+    },
+    "eslint-plugin-lodash-fp": {
+      "optional": true
+    },
+    "eslint-plugin-mocha": {
+      "optional": true
+    },
+    "eslint-plugin-mocha-cleanup": {
+      "optional": true
+    },
+    "eslint-plugin-no-constructor-bind": {
+      "optional": true
+    },
+    "eslint-plugin-no-secrets": {
+      "optional": true
+    },
+    "eslint-plugin-no-unsanitized": {
+      "optional": true
+    },
+    "eslint-plugin-no-use-extend-native": {
+      "optional": true
+    },
+    "eslint-plugin-optimize-regex": {
+      "optional": true
+    },
+    "eslint-plugin-pii": {
+      "optional": true
+    },
+    "eslint-plugin-prettier": {
+      "optional": true
+    },
+    "eslint-plugin-promise": {
+      "optional": true
+    },
+    "eslint-plugin-qunit": {
+      "optional": true
+    },
+    "eslint-plugin-ramda": {
+      "optional": true
+    },
+    "eslint-plugin-react-redux": {
+      "optional": true
+    },
+    "eslint-plugin-redux-saga": {
+      "optional": true
+    },
+    "eslint-plugin-security": {
+      "optional": true
+    },
+    "eslint-plugin-simple-import-sort": {
+      "optional": true
+    },
+    "eslint-plugin-sonarjs": {
+      "optional": true
+    },
+    "eslint-plugin-switch-case": {
+      "optional": true
+    },
+    "eslint-plugin-testing-library": {
+      "optional": true
+    },
+    "eslint-plugin-unicorn": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/markdown": "^7.5.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "ava": "^6.4.1",
+    "babel-eslint": "^10.1.0",
+    "chai": "^6.2.2",
+    "cypress": "^15.10.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-find-rules": "^5.0.0",
+    "eslint-plugin-ava": "^15.1.0",
+    "eslint-plugin-chai-expect": "^3.1.0",
+    "eslint-plugin-chai-friendly": "^1.1.0",
+    "eslint-plugin-const-case": "^1.2.2",
+    "eslint-plugin-cypress": "^5.2.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-fsa": "^1.0.12",
+    "eslint-plugin-html": "^8.1.4",
+    "eslint-plugin-jasmine": "^4.2.2",
+    "eslint-plugin-jest": "^29.13.0",
+    "eslint-plugin-jest-async": "^1.0.3",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-json": "^4.0.1",
+    "eslint-plugin-lodash": "^8.0.0",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-mocha": "^11.2.0",
+    "eslint-plugin-mocha-cleanup": "^1.11.3",
+    "eslint-plugin-no-constructor-bind": "^2.0.4",
+    "eslint-plugin-no-secrets": "^2.2.1",
+    "eslint-plugin-no-unsanitized": "^4.1.4",
+    "eslint-plugin-no-use-extend-native": "^0.7.2",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-pii": "^1.0.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-qunit": "^8.2.6",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react-redux": "^4.2.2",
+    "eslint-plugin-redux-saga": "^1.3.2",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^3.0.6",
+    "eslint-plugin-switch-case": "^3.0.1",
+    "eslint-plugin-testing-library": "^7.15.4",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "husky": "^9.1.7",
     "in-publish": "^2.0.1",
-    "jasmine": "^5.1.0",
-    "jest": "^29.7.0",
+    "jasmine": "^6.0.0",
+    "jest": "^30.2.0",
     "jest-dom": "^4.0.0",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^16.2.7",
     "lodash-fp": "^0.10.4",
-    "mocha": "^10.3.0",
-    "prettier": "^3.2.5",
+    "mocha": "^11.7.5",
+    "prettier": "^3.8.1",
     "prettier-cli": "^0.1.0",
-    "qunit": "^2.20.0",
-    "react": "^18.2.0",
-    "react-redux": "^9.1.0",
+    "qunit": "^2.25.0",
+    "react": "^19.2.4",
+    "react-redux": "^9.2.0",
     "redux": "^5.0.1",
-    "redux-saga": "^1.3.0",
+    "redux-saga": "^1.4.2",
     "safe-publish-latest": "^2.0.0",
-    "snyk": "^1.1279.0",
+    "snyk": "^1.1302.1",
     "testing-library": "0.0.2"
   },
   "engines": {
-    "node": ">= 6.5"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "snyk": false
 }

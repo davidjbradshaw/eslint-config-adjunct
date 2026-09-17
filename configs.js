@@ -1,21 +1,19 @@
-const { hasAnyDep } = require('./lib/utils')
-const isModuleAvailable = require('./lib/is-module-available')
+import isModuleAvailable from './lib/is-module-available.js'
+import { hasAnyDep } from './lib/utils.js'
 
 // Base rules
-const rules = [
-  // 'array-func',
+export const rules = [
   'const-case',
   'eslint-comments',
   'html',
   'json',
-  // 'json-format',
-  'markdown',
   'no-constructor-bind',
   'no-use-extend-native',
   'optimize-regex',
   'promise',
   'simple-import-sort',
   'sonarjs',
+  'markdown',
   'switch-case',
   'unicorn',
 
@@ -24,7 +22,6 @@ const rules = [
   'no-unsanitized',
   'pii',
   'security',
-  'xss',
 ]
 
 // Optionals rules besed on project dependencies
@@ -67,6 +64,5 @@ testRules.forEach((depRule) => {
 if (hasAnyDep('prettier')) rules.push('prettier')
 
 // Extra required optional packages
-const extraInstallPackage = [['prettier', 'eslint-config-prettier']]
-
-module.exports = { rules, extraInstallPackage }
+export const extraInstallPackage = [['prettier', 'eslint-config-prettier']]
+export default { rules, extraInstallPackage }

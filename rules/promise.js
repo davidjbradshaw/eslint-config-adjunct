@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:promise/recommended'],
   plugins: ['promise'],
   rules: {

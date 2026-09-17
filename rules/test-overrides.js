@@ -1,6 +1,7 @@
-require('../lib/loggers').consoleLog('  eslint-test-overrides\n')
+import { consoleLog } from '../lib/loggers.js'
+consoleLog('  eslint-test-overrides\n')
 
-module.exports = {
+export default {
   overrides: [
     {
       files: [

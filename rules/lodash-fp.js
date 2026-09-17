@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:lodash-fp/recommended'],
   plugins: ['lodash-fp'],
   rules: {

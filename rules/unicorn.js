@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['plugin:unicorn/recommended'],
   rules: {
     'unicorn/expiring-todo-comments': 0,

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: ['security'],
   extends: ['plugin:security/recommended-legacy'],
   rules: {
