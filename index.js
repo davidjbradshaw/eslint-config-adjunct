@@ -185,6 +185,10 @@ const collectPluginUsage = (flatConfigs) => {
         if (idx > 0) usedPlugins.add(rk.slice(0, idx))
       }
     }
+    // Plugins declared directly (e.g. html, which has no rules of its own)
+    if (cfg?.plugins && !Array.isArray(cfg.plugins)) {
+      for (const name of Object.keys(cfg.plugins)) usedPlugins.add(name)
+    }
     if (cfg && typeof cfg.language === 'string' && cfg.language.includes('/')) {
       localPluginNames.add(cfg.language.split('/')[0])
     }
@@ -251,17 +255,11 @@ const buildFinalConfigs = (sanitized, globalPlugins) => {
     globalPlugins && Object.keys(globalPlugins).length > 0
       ? [{ plugins: globalPlugins }, ...sanitized]
       : sanitized
-  // Ensure SonarJS does not run on Markdown files and allow internal config imports
-  base.push(
-    {
-      files: ['**/*.md', '**/*.md/*.*'],
-      rules: { 'sonarjs/*': 'off' },
-    },
-    {
-      files: ['index.js'],
-      rules: { 'ava/no-import-test-files': 'off' },
-    }
-  )
+  // Allow internal config imports
+  base.push({
+    files: ['index.js'],
+    rules: { 'ava/no-import-test-files': 'off' },
+  })
   return base
 }
 

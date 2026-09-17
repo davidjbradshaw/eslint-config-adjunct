@@ -10,7 +10,6 @@ export default [
   {
     files: ['**/*.md/*.*'],
     rules: {
-      'sonarjs/*': 'off',
       'global-require': 'off',
       'import/no-unresolved': 'off',
       'import/order': 'off',
@@ -19,13 +18,6 @@ export default [
       'no-unused-vars': 'off',
       'prefer-reflect': 'off',
       strict: 'off',
-    },
-  },
-  // And at document-level for Markdown files
-  {
-    files: ['**/*.md'],
-    rules: {
-      'sonarjs/*': 'off',
     },
   },
 ]
